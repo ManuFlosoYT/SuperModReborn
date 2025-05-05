@@ -1,0 +1,61 @@
+# .github/workflows/build-mod.yml
+
+name: Build NeoForge Mod
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the 'main' branch (or your primary branch)
+  push:
+    branches: [ master ] # Adjust 'main' if your primary branch has a different name (e.g., 'master')
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest # Use a standard Linux environment
+
+    steps:
+    # 1. Checkout your repository code so the workflow can access it
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # 2. Set up the correct Java version needed by Minecraft 1.21.1 and NeoForge
+    #    Minecraft 1.21 often requires JDK 17 or potentially JDK 21. Check NeoForge documentation if unsure.
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21' # Ensure this matches the requirement (e.g., '17' or '21')
+        distribution: 'temurin' # Eclipse Temurin is a popular free OpenJDK distribution
+        cache: 'gradle' # Cache Gradle dependencies to speed up subsequent builds
+
+    # 3. Make the gradlew script executable
+    #    On Linux/macOS runners, the execute permission might not be set by default.
+    - name: Grant execute permission for gradlew
+      run: chmod +x ./gradlew
+
+    # 4. Run the Gradle build task
+    #    The 'build' task usually compiles the code and creates the JAR file(s).
+    - name: Build with Gradle
+      run: ./gradlew build
+      # If you encounter issues with the Gradle Daemon in CI, you might uncomment the following line:
+      # run: ./gradlew build --no-daemon
+
+    # 5. Upload the compiled JAR file as an artifact
+    #    This makes the JAR file downloadable from the workflow run page.
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        # Name of the artifact zip file that will be created
+        name: mod-jar-${{ github.sha }} # Include commit SHA for uniqueness
+        # Path to the file(s) to upload.
+        # The 'build' task typically outputs JARs to 'build/libs/'.
+        # This pattern tries to grab the main mod JAR, excluding common -dev or -sources JARs.
+        path: build/libs/!(*-dev|*-sources).jar
+        # Alternative path if the above doesn't work or you want all JARs:
+        # path: build/libs/*.jar
+        # You might need to adjust the path based on your exact build output.
+        # For example, if you know the exact name pattern: build/libs/yourmodid-*.jar
+        if-no-files-found: error # Fail the step if no matching JAR is found
