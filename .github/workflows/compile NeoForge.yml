@@ -1,6 +1,8 @@
 # .github/workflows/build-mod.yml
 
 name: Build NeoForge Mod
+permissions:
+  contents: read
 
 # Controls when the workflow will run
 on:
