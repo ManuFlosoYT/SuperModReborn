@@ -50,6 +50,15 @@ public class ModBlocks
                     .sound(SoundType.STONE)
             ));
 
+    public static final DeferredBlock<Block> PALM_PLANKS = registerBlock("palm_planks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .explosionResistance(3f)
+                    .requiresCorrectToolForDrops()
+                    .ignitedByLava()
+                    .sound(SoundType.WOOD)
+            ));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -59,7 +59,7 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creative_tab.supermodreborn.decoration"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_resources"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(Items.DIRT);
+                        output.accept(ModBlocks.PALM_PLANKS);
                     })
                     .build());
 

@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.api.distmarker.Dist;
@@ -60,7 +61,18 @@ public class supermodreborn
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(supermodreborn::registerFlammability);
+    }
 
+    private static void registerFlammability()
+    {
+        FireBlock fireBlock = (FireBlock) Blocks.FIRE;
+
+        // Parameters: (Block instance, burn chance, flame speed)
+        // Higher burn chance = easier to ignite from nearby fire
+        // Higher flame speed = burns away faster
+
+        fireBlock.setFlammable(ModBlocks.PALM_PLANKS.get(), 5, 20);
     }
 
     // Add the example block item to the building blocks tab

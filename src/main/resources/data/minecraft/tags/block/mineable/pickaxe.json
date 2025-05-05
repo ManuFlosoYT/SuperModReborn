@@ -3,6 +3,7 @@
   "values": [
     "supermodreborn:lithium_block",
     "supermodreborn:lithium_ore",
-    "supermodreborn:deepslate_lithium_ore"
+    "supermodreborn:deepslate_lithium_ore",
+    "supermodreborn:chunk_loader"
   ]
 }
