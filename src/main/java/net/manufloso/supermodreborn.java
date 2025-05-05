@@ -1,6 +1,8 @@
 package net.manufloso;
 
 import com.mojang.logging.LogUtils;
+import net.manufloso.block.ModBlocks;
+import net.manufloso.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -34,7 +36,8 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(supermodreborn.MODID)
-public class supermodreborn {
+public class supermodreborn
+{
     // Define mod id in a common place for everything to reference
     public static final String MODID = "supermodreborn";
     // Directly reference a slf4j logger
@@ -42,30 +45,50 @@ public class supermodreborn {
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public supermodreborn(IEventBus modEventBus, ModContainer modContainer) {
+    public supermodreborn(IEventBus modEventBus, ModContainer modContainer)
+    {
+        modEventBus.addListener(this::commonSetup);
+        NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        modEventBus.addListener(this::addCreative);
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    private void commonSetup(final FMLCommonSetupEvent event)
+    {
 
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
+    {
+        if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS)
+        {
+            event.accept(ModItems.LITHIUM_INGOT);
+            event.accept(ModItems.RAW_LITHIUM);
 
+            event.accept(ModBlocks.LITHIUM_ORE);
+            event.accept(ModBlocks.LITHIUM_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(ServerStartingEvent event)
+    {
 
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
+    public static class ClientModEvents
+    {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
+        public static void onClientSetup(FMLClientSetupEvent event)
+        {
 
         }
     }

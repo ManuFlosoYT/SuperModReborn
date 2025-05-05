@@ -1,5 +1,9 @@
 {
-  "itemGroup.supermodreborn": "Example Mod Tab",
-  "block.supermodreborn.example_block": "Example Block",
-  "item.supermodreborn.example_item": "Example Item"
+  "itemGroup.supermodreborn": "SuperMod Reborn",
+
+  "block.supermodreborn.lithium_ore": "Lithium Ore",
+  "block.supermodreborn.lithium_block": "Lithium Block",
+
+  "item.supermodreborn.lithium_ingot": "Lithium Ingot",
+  "item.supermodreborn.raw_lithium": "Raw Lithium"
 }
