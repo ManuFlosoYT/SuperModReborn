@@ -69,7 +69,7 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creative_tab.supermodreborn.utilities"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_decoration"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(Items.DIRT);
+                        output.accept(ModBlocks.CHUNK_LOADER);
                     })
                     .build());
 

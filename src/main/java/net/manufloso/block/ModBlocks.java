@@ -1,5 +1,6 @@
 package net.manufloso.block;
 
+import net.manufloso.block.custom.ChunkLoader;
 import net.manufloso.item.ModItems;
 import net.manufloso.supermodreborn;
 import net.minecraft.world.item.BlockItem;
@@ -39,6 +40,14 @@ public class ModBlocks
                     .explosionResistance(15f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.COPPER)
+            ));
+
+    public static final DeferredBlock<Block> CHUNK_LOADER = registerBlock("chunk_loader",
+            () -> new ChunkLoader(BlockBehaviour.Properties.of()
+                    .strength(2.5f)
+                    .explosionResistance(15f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
