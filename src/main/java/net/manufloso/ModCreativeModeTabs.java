@@ -25,7 +25,7 @@ public class ModCreativeModeTabs
                     .icon(() -> new ItemStack(Items.DIRT))
                     .title(Component.translatable("creative_tab.supermodreborn.equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(Items.DIRT);
+                        output.accept(ModItems.LAUNCHER);
                     })
                     .build());
 
