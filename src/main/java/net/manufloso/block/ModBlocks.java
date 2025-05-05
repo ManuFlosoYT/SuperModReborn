@@ -25,10 +25,19 @@ public class ModBlocks
                     .sound(SoundType.STONE)
             ));
 
+    public static final DeferredBlock<Block> DEEPSLATE_LITHIUM_ORE = registerBlock("deepslate_lithium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.5f)
+                    .explosionResistance(15f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)
+            ));
+
     public static final DeferredBlock<Block> LITHIUM_BLOCK = registerBlock("lithium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2.5f)
                     .explosionResistance(15f)
+                    .requiresCorrectToolForDrops()
                     .sound(SoundType.COPPER)
             ));
 

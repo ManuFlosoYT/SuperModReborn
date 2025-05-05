@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "lithium",
+  "ingredient": {
+    "item": "supermodreborn:raw_lithium"
+  },
+  "result": {
+    "count": 1,
+    "id": "supermodreborn:lithium_ingot"
+  }
+}
