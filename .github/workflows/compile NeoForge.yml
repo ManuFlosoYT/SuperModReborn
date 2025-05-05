@@ -49,13 +49,12 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         # Name of the artifact zip file that will be created
-        name: mod-jar-${{ github.sha }} # Include commit SHA for uniqueness
+        name: SupermodReborn-${{ github.sha }} # Include commit SHA for uniqueness
         # Path to the file(s) to upload.
         # The 'build' task typically outputs JARs to 'build/libs/'.
-        # This pattern tries to grab the main mod JAR, excluding common -dev or -sources JARs.
-        path: build/libs/!(*-dev|*-sources).jar
+        # path: build/libs/(SupermodReborn*).jar
         # Alternative path if the above doesn't work or you want all JARs:
-        # path: build/libs/*.jar
+        path: build/libs/*.jar
         # You might need to adjust the path based on your exact build output.
         # For example, if you know the exact name pattern: build/libs/yourmodid-*.jar
         if-no-files-found: error # Fail the step if no matching JAR is found
