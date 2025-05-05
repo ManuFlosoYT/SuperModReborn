@@ -50,6 +50,7 @@ public class supermodreborn
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -65,14 +66,7 @@ public class supermodreborn
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.OP_BLOCKS)
-        {
-            event.accept(ModItems.LITHIUM_INGOT);
-            event.accept(ModItems.RAW_LITHIUM);
 
-            event.accept(ModBlocks.LITHIUM_ORE);
-            event.accept(ModBlocks.LITHIUM_BLOCK);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

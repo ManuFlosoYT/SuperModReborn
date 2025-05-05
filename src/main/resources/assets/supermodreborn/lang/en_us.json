@@ -1,6 +1,12 @@
 {
   "itemGroup.supermodreborn": "SuperMod Reborn",
 
+  "creative_tab.supermodreborn.equipment": "Supermod Reborn: Equipment",
+  "creative_tab.supermodreborn.food": "Supermod Reborn: Food",
+  "creative_tab.supermodreborn.resources": "Supermod Reborn: Resources",
+  "creative_tab.supermodreborn.decoration": "Supermod Reborn: Decoration",
+  "creative_tab.supermodreborn.utilities": "Supermod Reborn: Utilities",
+
   "block.supermodreborn.lithium_ore": "Lithium Ore",
   "block.supermodreborn.lithium_block": "Lithium Block",
 
