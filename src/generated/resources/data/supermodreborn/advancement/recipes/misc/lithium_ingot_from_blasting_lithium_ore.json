@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "has_lithium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "supermodreborn:lithium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_lithium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "supermodreborn:lithium_ingot_from_blasting_lithium_ore"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "type": "minecraft:smoking",
-  "category": "misc",
+  "type": "minecraft:smelting",
+  "category": "food",
   "cookingtime": 200,
   "experience": 0.25,
   "group": "cheese",
