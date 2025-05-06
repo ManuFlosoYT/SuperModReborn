@@ -1,5 +1,6 @@
 package net.manufloso.item;
 
+import net.manufloso.item.custom.FuelItem;
 import net.manufloso.item.custom.LauncherItem;
 import net.manufloso.supermodreborn;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -24,6 +25,12 @@ public class ModItems
                     .stacksTo(1)
                     .rarity(Rarity.UNCOMMON)
             ));
+
+    public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE)));
+
+    //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
+    //        () -> new FuelItem(new Item.Properties(), 800));
 
     public static void register(IEventBus eventBus)
     {

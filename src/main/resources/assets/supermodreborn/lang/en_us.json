@@ -15,5 +15,9 @@
 
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
-  "item.supermodreborn.launcher": "Launcher"
+  "item.supermodreborn.launcher": "Launcher",
+  "item.supermodreborn.cheese": "Cheese",
+
+  "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
+  "tooltip.supermodreborn.launcher": "Right click on the ground to fly"
 }

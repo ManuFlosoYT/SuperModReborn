@@ -31,11 +31,11 @@ public class ModCreativeModeTabs
 
     public static final Supplier<CreativeModeTab> CREATIVE_TAB_FOOD = CREATIVE_MODE_TAB.register("creative_tab_food",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Items.DIRT))
+                    .icon(() -> new ItemStack(ModItems.CHEESE.get()))
                     .title(Component.translatable("creative_tab.supermodreborn.food"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(Items.DIRT);
+                        output.accept(ModItems.CHEESE);
                     })
                     .build());
 
