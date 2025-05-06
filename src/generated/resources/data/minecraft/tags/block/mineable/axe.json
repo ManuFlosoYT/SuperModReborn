@@ -1,5 +1,14 @@
 {
   "values": [
-    "supermodreborn:palm_planks"
+    "supermodreborn:palm_planks",
+    "supermodreborn:palm_stairs",
+    "supermodreborn:palm_slab",
+    "supermodreborn:palm_pressure_plate",
+    "supermodreborn:palm_button",
+    "supermodreborn:palm_fence",
+    "supermodreborn:palm_fence_gate",
+    "supermodreborn:palm_wall",
+    "supermodreborn:palm_trapdoor",
+    "supermodreborn:palm_door"
   ]
 }

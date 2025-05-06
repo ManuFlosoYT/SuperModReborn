@@ -60,6 +60,15 @@ public class ModCreativeModeTabs
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_resources"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.PALM_PLANKS);
+                        output.accept(ModBlocks.PALM_DOOR);
+                        output.accept(ModBlocks.PALM_TRAPDOOR);
+                        output.accept(ModBlocks.PALM_FENCE);
+                        output.accept(ModBlocks.PALM_FENCE_GATE);
+                        output.accept(ModBlocks.PALM_WALL);
+                        output.accept(ModBlocks.PALM_BUTTON);
+                        output.accept(ModBlocks.PALM_PRESSURE_PLATE);
+                        output.accept(ModBlocks.PALM_SLAB);
+                        output.accept(ModBlocks.PALM_STAIRS);
                     })
                     .build());
 

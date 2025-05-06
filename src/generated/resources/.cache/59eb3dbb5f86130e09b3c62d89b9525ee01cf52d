@@ -1,6 +1,15 @@
-// 1.21.1	2025-05-06T16:50:28.0277302	Loot Tables
+// 1.21.1	2025-05-06T17:33:43.5058626	Loot Tables
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
 7d0ac1196124f0aa00ad45459b5a2af29030d728 data/supermodreborn/loot_table/blocks/deepslate_lithium_ore.json
 0deae033e778190a585eb1121916147107434a61 data/supermodreborn/loot_table/blocks/lithium_block.json
 480153e640b5dc7c118872cd37a7d381e71f1e51 data/supermodreborn/loot_table/blocks/lithium_ore.json
+610c2d19356c83955f0073b0c1db26ecdcf4570c data/supermodreborn/loot_table/blocks/palm_button.json
+2002200bd80aeda860dfad2ff55d65b84b878b77 data/supermodreborn/loot_table/blocks/palm_door.json
+617a14289908a232a98b9b0c53e583ab5de128db data/supermodreborn/loot_table/blocks/palm_fence.json
+134d0c563687dc187c49a7b1eb5de2367bf05d64 data/supermodreborn/loot_table/blocks/palm_fence_gate.json
 d076b80e06472299ed7545235b4ffb4361edfd59 data/supermodreborn/loot_table/blocks/palm_planks.json
+ed54cf494f212dc16c01eb92a2a36987d9066142 data/supermodreborn/loot_table/blocks/palm_pressure_plate.json
+3ad8d309ae8cfc75cd8ea69780c0f330deff7b6e data/supermodreborn/loot_table/blocks/palm_slab.json
+4814c6d907afcea599dc82340bbcbea8f14f1514 data/supermodreborn/loot_table/blocks/palm_stairs.json
+4acbbc18799f398e9b24e67fb351a1606857d278 data/supermodreborn/loot_table/blocks/palm_trapdoor.json
+9a66f4739bcdac2182a13776b69cba984414b76a data/supermodreborn/loot_table/blocks/palm_wall.json

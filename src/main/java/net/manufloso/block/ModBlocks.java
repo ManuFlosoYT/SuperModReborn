@@ -5,9 +5,10 @@ import net.manufloso.item.ModItems;
 import net.manufloso.supermodreborn;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -54,10 +55,110 @@ public class ModBlocks
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .explosionResistance(3f)
-                    .requiresCorrectToolForDrops()
                     .ignitedByLava()
                     .sound(SoundType.WOOD)
-            ));
+            )
+    );
+
+
+    public static final DeferredBlock<StairBlock> PALM_STAIRS = registerBlock("palm_stairs",
+            () -> new StairBlock(
+                    ModBlocks.PALM_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+    public static final DeferredBlock<SlabBlock> PALM_SLAB = registerBlock("palm_slab",
+            () -> new SlabBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<PressurePlateBlock> PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
+            () -> new PressurePlateBlock(
+                    BlockSetType.OAK,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<ButtonBlock> PALM_BUTTON = registerBlock("palm_button",
+            () -> new ButtonBlock(
+                    BlockSetType.OAK,
+                    20,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+                            .noCollission()
+            )
+    );
+
+    public static final DeferredBlock<FenceBlock> PALM_FENCE = registerBlock("palm_fence",
+            () -> new FenceBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<FenceGateBlock> PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            () -> new FenceGateBlock(
+                    WoodType.OAK,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<WallBlock> PALM_WALL = registerBlock("palm_wall",
+            () -> new WallBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
+    public static final DeferredBlock<DoorBlock> PALM_DOOR = registerBlock("palm_door",
+            () -> new DoorBlock(
+                    BlockSetType.OAK,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+                            .noOcclusion()
+            )
+    );
+
+    public static final DeferredBlock<TrapDoorBlock> PALM_TRAPDOOR = registerBlock("palm_trapdoor",
+            () -> new TrapDoorBlock(
+                    BlockSetType.OAK,
+                    BlockBehaviour.Properties.of()
+                            .strength(2f)
+                            .explosionResistance(3f)
+                            .ignitedByLava()
+                            .sound(SoundType.WOOD)
+                            .noOcclusion()
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

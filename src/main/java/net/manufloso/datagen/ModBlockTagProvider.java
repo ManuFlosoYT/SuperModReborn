@@ -29,6 +29,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.PALM_PLANKS.get())
+                .add(ModBlocks.PALM_STAIRS.get())
+                .add(ModBlocks.PALM_SLAB.get())
+                .add(ModBlocks.PALM_PRESSURE_PLATE.get())
+                .add(ModBlocks.PALM_BUTTON.get())
+                .add(ModBlocks.PALM_FENCE.get())
+                .add(ModBlocks.PALM_FENCE_GATE.get())
+                .add(ModBlocks.PALM_WALL.get())
+                .add(ModBlocks.PALM_TRAPDOOR.get())
+                .add(ModBlocks.PALM_DOOR.get())
         ;
 
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -37,6 +46,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get())
 
                 .add(ModBlocks.CHUNK_LOADER.get())
+        ;
+
+
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.PALM_FENCE.get())
+        ;
+
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PALM_FENCE_GATE.get())
+        ;
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.PALM_WALL.get())
         ;
 
     }

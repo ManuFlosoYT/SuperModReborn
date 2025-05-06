@@ -11,12 +11,26 @@
   "block.supermodreborn.deepslate_lithium_ore": "Deepslate Lithium Ore",
   "block.supermodreborn.lithium_block": "Lithium Block",
   "block.supermodreborn.chunk_loader": "Chunk Loader",
+
   "block.supermodreborn.palm_planks": "Palm Planks",
+  "block.supermodreborn.palm_door": "Palm Door",
+  "block.supermodreborn.palm_trapdoor": "Palm Trapdoor",
+  "block.supermodreborn.palm_fence": "Palm Fence",
+  "block.supermodreborn.palm_fence_gate": "Palm Fence Gate",
+  "block.supermodreborn.palm_wall": "Palm Wall",
+  "block.supermodreborn.palm_button": "Palm Button",
+  "block.supermodreborn.palm_pressure_plate": "Palm Pressure Plate",
+  "block.supermodreborn.palm_slab": "Palm Slab",
+  "block.supermodreborn.palm_stairs": "Palm Stairs",
+
+
 
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
   "item.supermodreborn.launcher": "Launcher",
   "item.supermodreborn.cheese": "Cheese",
+
+
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly"

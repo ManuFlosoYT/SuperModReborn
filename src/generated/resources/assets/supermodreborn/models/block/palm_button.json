@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "supermodreborn:block/palm_planks"
+  }
+}

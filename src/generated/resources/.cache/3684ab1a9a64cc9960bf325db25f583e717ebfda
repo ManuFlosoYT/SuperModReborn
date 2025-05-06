@@ -1,4 +1,7 @@
-// 1.21.1	2025-05-06T16:50:28.0267313	Tags for minecraft:block mod id supermodreborn
-b9291c11e87bbd04177d028d51d87868655625a4 data/minecraft/tags/block/mineable/axe.json
+// 1.21.1	2025-05-07T00:45:47.6762618	Tags for minecraft:block mod id supermodreborn
+16690819a7324645cc6ea530f9447c0a01b8bc1d data/minecraft/tags/block/fences.json
+7ca3a855d6d4d2066281458b0d5478fdd8f1134a data/minecraft/tags/block/fence_gates.json
+a9a4d437d951c135e775ade45ef8e0e7e05bda04 data/minecraft/tags/block/mineable/axe.json
 814ac8a813023f5f154384b37cf1e45476c9cf57 data/minecraft/tags/block/mineable/pickaxe.json
 814ac8a813023f5f154384b37cf1e45476c9cf57 data/minecraft/tags/block/needs_iron_tool.json
+30b773c8c1679406218b0930803cbc4f1c40db93 data/minecraft/tags/block/walls.json

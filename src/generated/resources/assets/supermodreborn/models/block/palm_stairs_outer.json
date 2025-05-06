@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "supermodreborn:block/palm_planks",
+    "side": "supermodreborn:block/palm_planks",
+    "top": "supermodreborn:block/palm_planks"
+  }
+}

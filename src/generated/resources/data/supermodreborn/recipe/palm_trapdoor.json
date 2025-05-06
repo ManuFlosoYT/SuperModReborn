@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "palm",
+  "key": {
+    "#": {
+      "item": "supermodreborn:palm_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "supermodreborn:palm_trapdoor"
+  }
+}
