@@ -69,6 +69,8 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.PALM_PRESSURE_PLATE);
                         output.accept(ModBlocks.PALM_SLAB);
                         output.accept(ModBlocks.PALM_STAIRS);
+
+                        output.accept(ModBlocks.END_LAMP);
                     })
                     .build());
 

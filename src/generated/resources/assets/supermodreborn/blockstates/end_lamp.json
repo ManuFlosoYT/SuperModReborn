@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "supermodreborn:block/end_lamp_off"
+    },
+    "clicked=true": {
+      "model": "supermodreborn:block/end_lamp_on"
+    }
+  }
+}

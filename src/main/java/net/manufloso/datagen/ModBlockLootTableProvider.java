@@ -52,6 +52,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.PALM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.PALM_DOOR.get()));
 
+        dropSelf(ModBlocks.END_LAMP.get());
+
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));
 

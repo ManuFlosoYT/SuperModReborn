@@ -1,6 +1,7 @@
-// 1.21.1	2025-05-06T17:33:43.5148624	Block States: supermodreborn
+// 1.21.1	2025-05-07T10:28:41.2686822	Block States: supermodreborn
 8a11a6500c07e656951e247b24f312019903c641 assets/supermodreborn/blockstates/chunk_loader.json
 07df2702ffb9f1317ee2b099c6963082d928c098 assets/supermodreborn/blockstates/deepslate_lithium_ore.json
+13ad817ad4fb0316afd1e1acd8dc91e842354455 assets/supermodreborn/blockstates/end_lamp.json
 04ee025620dc6e6a97adbca0a890af9b730224b7 assets/supermodreborn/blockstates/lithium_block.json
 b0922d48993ae59c501c9d9f39a925568b09928c assets/supermodreborn/blockstates/lithium_ore.json
 e451b32fbd03096af83488aec8e9b1e280d396f9 assets/supermodreborn/blockstates/palm_button.json
@@ -15,6 +16,8 @@ d4f71cd2c066937543c7b080b76634b7b9c23b7b assets/supermodreborn/blockstates/palm_
 eac61e9297e5978db65af0c2494d83960a164ebc assets/supermodreborn/blockstates/palm_wall.json
 581896d1753cc66a2c35af0d7c3d188f2d6e8f9d assets/supermodreborn/models/block/chunk_loader.json
 eebc80a44b1b14c22bba1ba366167f6754a176a4 assets/supermodreborn/models/block/deepslate_lithium_ore.json
+7496e72cf84a9e40b943fee4b75c722bee0ae7e1 assets/supermodreborn/models/block/end_lamp_off.json
+bfd36fa6458a89c3f27ba1aa95025f08b6d7470a assets/supermodreborn/models/block/end_lamp_on.json
 a3b1902f347462e4aea20b5403f33432bb17e865 assets/supermodreborn/models/block/lithium_block.json
 0b2a0f73f95f902bb39cc3aca221b815961b32e9 assets/supermodreborn/models/block/lithium_ore.json
 a7bea2f03602dada1473ac780012fc6cad3bc3d4 assets/supermodreborn/models/block/palm_button.json
@@ -49,6 +52,7 @@ cdf6fadf73cda369185ad27b7813caab7b28ee77 assets/supermodreborn/models/block/palm
 165c8f15d728b9403d482cd962dc608823a7884e assets/supermodreborn/models/block/palm_wall_side_tall.json
 2ce119b368563b7c756440f56177a1caf0c5e3dd assets/supermodreborn/models/item/chunk_loader.json
 f1933e891cde4f3ab255da2f67a013dd43514ab4 assets/supermodreborn/models/item/deepslate_lithium_ore.json
+fad77a08ad017670525ea3eb0b0b9b05a76c025f assets/supermodreborn/models/item/end_lamp.json
 37802c31e82d9fcecaf3aebc57df0e02fc5adecc assets/supermodreborn/models/item/lithium_block.json
 f178e591935654b2725b3ce8093e0847e2951e0f assets/supermodreborn/models/item/lithium_ore.json
 bac9d246e90600af89d8105ac3e87485de6e7595 assets/supermodreborn/models/item/palm_fence_gate.json

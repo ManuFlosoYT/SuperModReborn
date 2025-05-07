@@ -1,6 +1,7 @@
-// 1.21.1	2025-05-06T17:33:43.5058626	Loot Tables
+// 1.21.1	2025-05-07T10:15:34.6601005	Loot Tables
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
 7d0ac1196124f0aa00ad45459b5a2af29030d728 data/supermodreborn/loot_table/blocks/deepslate_lithium_ore.json
+99189eda4e27eda70176f583f59c4262964712e0 data/supermodreborn/loot_table/blocks/end_lamp.json
 0deae033e778190a585eb1121916147107434a61 data/supermodreborn/loot_table/blocks/lithium_block.json
 480153e640b5dc7c118872cd37a7d381e71f1e51 data/supermodreborn/loot_table/blocks/lithium_ore.json
 610c2d19356c83955f0073b0c1db26ecdcf4570c data/supermodreborn/loot_table/blocks/palm_button.json
