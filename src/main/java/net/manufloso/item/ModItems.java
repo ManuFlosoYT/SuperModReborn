@@ -2,6 +2,7 @@ package net.manufloso.item;
 
 import net.manufloso.item.custom.FuelItem;
 import net.manufloso.item.custom.LauncherItem;
+import net.manufloso.item.custom.TeleportLinkItem;
 import net.manufloso.supermodreborn;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.Item;
@@ -24,10 +25,22 @@ public class ModItems
             () -> new LauncherItem(new Item.Properties()
                     .stacksTo(1)
                     .rarity(Rarity.UNCOMMON)
-            ));
+            )
+    );
 
     public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE)));
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.CHEESE
+                    )
+            )
+    );
+
+    public static final DeferredItem<Item> TELEPORT_LINK = ITEMS.register("teleport_link",
+            () -> new TeleportLinkItem(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+            )
+    );
 
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));

@@ -2,6 +2,7 @@ package net.manufloso;
 
 import com.mojang.logging.LogUtils;
 import net.manufloso.block.ModBlocks;
+import net.manufloso.component.ModDataComponents;
 import net.manufloso.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -54,6 +55,7 @@ public class supermodreborn
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponents.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

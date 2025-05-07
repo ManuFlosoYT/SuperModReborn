@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.CHEESE.get());
         basicItem(ModItems.LAUNCHER.get());
+        basicItem(ModItems.TELEPORT_LINK.get());
 
         buttonItem(ModBlocks.PALM_BUTTON, ModBlocks.PALM_PLANKS);
         fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);

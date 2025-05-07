@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-07T00:24:27.1632648	Item Models: supermodreborn
+// 1.21.1	2025-05-07T10:35:26.4302285	Item Models: supermodreborn
 8fac8a62f3293b9e7bec2e0da24faffd4bfc919d assets/supermodreborn/models/item/cheese.json
 b2d45f1011602c021149e22dc01da4051f062d5b assets/supermodreborn/models/item/launcher.json
 55f1bf26d511cc751d1d647f70fb943d27a28671 assets/supermodreborn/models/item/lithium_ingot.json
@@ -7,3 +7,4 @@ b2d45f1011602c021149e22dc01da4051f062d5b assets/supermodreborn/models/item/launc
 e616e081b3b7d34043f1b12542ccefd918d65e50 assets/supermodreborn/models/item/palm_fence.json
 1b826387e04ac724fdfda499d3b3c4bb979db17d assets/supermodreborn/models/item/palm_wall.json
 873cb89e91ca1e2fc2210c3f2da22e0d8bf56da1 assets/supermodreborn/models/item/raw_lithium.json
+bb7dd3b82fe4775bcb96f0ef71e16f4dba2be44b assets/supermodreborn/models/item/teleport_link.json

@@ -26,6 +26,7 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creative_tab.supermodreborn.equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.LAUNCHER);
+                        output.accept(ModItems.TELEPORT_LINK);
                     })
                     .build());
 
