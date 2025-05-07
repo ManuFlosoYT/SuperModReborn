@@ -1,6 +1,7 @@
 package net.manufloso.datagen;
 
 import net.manufloso.block.ModBlocks;
+import net.manufloso.item.util.ModTags;
 import net.manufloso.supermodreborn;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -59,6 +60,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.PALM_WALL.get())
+        ;
+
+        tag(ModTags.Blocks.NEEDS_ENDIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+        ;
+
+        tag(ModTags.Blocks.INCORRECT_FOR_ENDIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .remove(ModTags.Blocks.NEEDS_ENDIUM_TOOL)
         ;
 
     }

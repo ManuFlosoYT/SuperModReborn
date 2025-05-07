@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "supermodreborn:item/endium_hoe"
+  }
+}

@@ -1,12 +1,11 @@
-package net.manufloso;
+package net.manufloso.item;
 
 import net.manufloso.block.ModBlocks;
-import net.manufloso.item.ModItems;
+import net.manufloso.supermodreborn;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
@@ -22,11 +21,17 @@ public class ModCreativeModeTabs
 
     public static final Supplier<CreativeModeTab> CREATIVE_TAB_EQUIPMENT = CREATIVE_MODE_TAB.register("creative_tab_equipment",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Items.DIRT))
+                    .icon(() -> new ItemStack(ModItems.ENDIUM_HAMMER.get()))
                     .title(Component.translatable("creative_tab.supermodreborn.equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.LAUNCHER);
                         output.accept(ModItems.TELEPORT_LINK);
+                        output.accept(ModItems.ENDIUM_SWORD);
+                        output.accept(ModItems.ENDIUM_PICKAXE);
+                        output.accept(ModItems.ENDIUM_AXE);
+                        output.accept(ModItems.ENDIUM_SHOVEL);
+                        output.accept(ModItems.ENDIUM_HOE);
+                        output.accept(ModItems.ENDIUM_HAMMER);
                     })
                     .build());
 
@@ -51,6 +56,7 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.LITHIUM_BLOCK);
                         output.accept(ModBlocks.LITHIUM_ORE);
                         output.accept(ModBlocks.DEEPSLATE_LITHIUM_ORE);
+                        output.accept(ModItems.ENDIUM_INGOT);
                     })
                     .build());
 

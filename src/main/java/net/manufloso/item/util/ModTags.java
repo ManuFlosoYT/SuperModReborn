@@ -12,6 +12,10 @@ public class ModTags
 {
     public static class Blocks
     {
+        public static final TagKey<Block> NEEDS_ENDIUM_TOOL = createTag("needs_endium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENDIUM_TOOL = createTag("incorrect_for_endium_tool");
+
+
         private static TagKey<Block> createTag(String name)
         {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, name));

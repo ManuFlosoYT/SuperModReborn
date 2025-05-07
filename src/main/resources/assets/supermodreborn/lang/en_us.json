@@ -33,7 +33,12 @@
   "item.supermodreborn.cheese": "Cheese",
   "item.supermodreborn.teleport_link": "Teleport Link",
 
-
+  "item.supermodreborn.endium_sword": "Endium Sword",
+  "item.supermodreborn.endium_pickaxe": "Endium Pickaxe",
+  "item.supermodreborn.endium_axe": "Endium Axe",
+  "item.supermodreborn.endium_shovel": "Endium Shovel",
+  "item.supermodreborn.endium_hoe": "Endium Hoe",
+  "item.supermodreborn.endium_hammer": "Endium Hammer",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",

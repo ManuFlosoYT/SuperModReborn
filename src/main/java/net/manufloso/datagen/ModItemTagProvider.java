@@ -7,6 +7,7 @@ import net.manufloso.supermodreborn;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -29,6 +30,26 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.LITHIUM_BLOCK.asItem())
                 .add(ModBlocks.LITHIUM_ORE.asItem())
                 .add(ModBlocks.DEEPSLATE_LITHIUM_ORE.asItem())
+        ;
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.ENDIUM_SWORD.get())
+        ;
+
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.ENDIUM_PICKAXE.get())
+        ;
+
+        tag(ItemTags.AXES)
+                .add(ModItems.ENDIUM_AXE.get())
+        ;
+
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.ENDIUM_SHOVEL.get())
+        ;
+
+        tag(ItemTags.HOES)
+                .add(ModItems.ENDIUM_HOE.get())
         ;
     }
 }

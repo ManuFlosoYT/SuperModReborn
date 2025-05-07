@@ -1,2 +1,7 @@
-// 1.21.1	2025-05-06T16:50:28.02473	Tags for minecraft:item mod id supermodreborn
+// 1.21.1	2025-05-07T13:08:08.5691324	Tags for minecraft:item mod id supermodreborn
+32636bae0432ed556de2f689d62bf47c8401562e data/minecraft/tags/item/axes.json
+b760bdc34994047cc4ce234782bd6528817e72e5 data/minecraft/tags/item/hoes.json
+546eb5469f7f1c4f284d8380151b5224ccbf6672 data/minecraft/tags/item/pickaxes.json
+197fdb7d1c73a801f941d52034c076e1678d78e5 data/minecraft/tags/item/shovels.json
+a0767b07df2d979eb175741a1474d5090cc26724 data/minecraft/tags/item/swords.json
 9050f7bcd30dce0342788fc6352cfb1027f1dca7 data/supermodreborn/tags/item/lithium.json

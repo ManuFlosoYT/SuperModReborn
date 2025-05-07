@@ -1,12 +1,12 @@
 package net.manufloso.item;
 
 import net.manufloso.item.custom.FuelItem;
+import net.manufloso.item.custom.HammerItem;
 import net.manufloso.item.custom.LauncherItem;
 import net.manufloso.item.custom.TeleportLinkItem;
 import net.manufloso.supermodreborn;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -41,6 +41,29 @@ public class ModItems
                     .rarity(Rarity.RARE)
             )
     );
+
+    public static final DeferredItem<Item> ENDIUM_INGOT = ITEMS.register("endium_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> ENDIUM_SWORD = ITEMS.register("endium_sword",
+            () -> new SwordItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.ENDIUM, 139, 0f))));
+    public static final DeferredItem<PickaxeItem> ENDIUM_PICKAXE = ITEMS.register("endium_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 4F, -2.8f))));
+    public static final DeferredItem<ShovelItem> ENDIUM_SHOVEL = ITEMS.register("endium_shovel",
+            () -> new ShovelItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.ENDIUM, 4F, -3.0f))));
+    public static final DeferredItem<AxeItem> ENDIUM_AXE = ITEMS.register("endium_axe",
+            () -> new AxeItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.ENDIUM, 179F, -3.2f))));
+    public static final DeferredItem<HoeItem> ENDIUM_HOE = ITEMS.register("endium_hoe",
+            () -> new HoeItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.ENDIUM, 4F, -3.0f))));
+
+    public static final DeferredItem<HammerItem> ENDIUM_HAMMER = ITEMS.register("endium_hammer",
+            () -> new HammerItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 4F, -3.5f))));
 
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));

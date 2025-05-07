@@ -6,9 +6,11 @@ import net.manufloso.supermodreborn;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -28,6 +30,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);
         wallItem(ModBlocks.PALM_WALL, ModBlocks.PALM_PLANKS);
         basicItem(ModBlocks.PALM_DOOR.asItem());
+
+        handheldItem(ModItems.ENDIUM_SWORD);
+        handheldItem(ModItems.ENDIUM_PICKAXE);
+        handheldItem(ModItems.ENDIUM_SHOVEL);
+        handheldItem(ModItems.ENDIUM_AXE);
+        handheldItem(ModItems.ENDIUM_HOE);
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
@@ -46,5 +54,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID,"item/" + item.getId().getPath()));
     }
 }

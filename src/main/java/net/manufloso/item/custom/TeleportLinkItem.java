@@ -38,7 +38,7 @@ public class TeleportLinkItem extends Item
         {
             player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 
-            if(player.isShiftKeyDown()){
+            if(player.isCrouching()){
                 itemstack.set(ModDataComponents.COORDINATES, null);
             }
             else {
