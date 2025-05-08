@@ -54,6 +54,68 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.END_LAMP.get());
 
+
+        // DECO BLOCKS
+
+        dropSelf(ModBlocks.DECO_1.get());
+        dropSelf(ModBlocks.DECO_2.get());
+        dropSelf(ModBlocks.DECO_3.get());
+        dropSelf(ModBlocks.DECO_4.get());
+        dropSelf(ModBlocks.DECO_5.get());
+        dropSelf(ModBlocks.DECO_6.get());
+        dropSelf(ModBlocks.DECO_7.get());
+        dropSelf(ModBlocks.DECO_8.get());
+        dropSelf(ModBlocks.DECO_9.get());
+        dropSelf(ModBlocks.DECO_10.get());
+        dropSelf(ModBlocks.DECO_11.get());
+        dropSelf(ModBlocks.DECO_12.get());
+        dropSelf(ModBlocks.DECO_13.get());
+        dropSelf(ModBlocks.DECO_14.get());
+        dropSelf(ModBlocks.DECO_15.get());
+        dropSelf(ModBlocks.DECO_16.get());
+        dropSelf(ModBlocks.DECO_17.get());
+        dropSelf(ModBlocks.DECO_18.get());
+        dropSelf(ModBlocks.DECO_19.get());
+        dropSelf(ModBlocks.DECO_20.get());
+        dropSelf(ModBlocks.DECO_21.get());
+        dropSelf(ModBlocks.DECO_22.get());
+        dropSelf(ModBlocks.DECO_23.get());
+        dropSelf(ModBlocks.DECO_24.get());
+        dropSelf(ModBlocks.DECO_25.get());
+        dropSelf(ModBlocks.DECO_26.get());
+        dropSelf(ModBlocks.DECO_27.get());
+        dropSelf(ModBlocks.DECO_28.get());
+        dropSelf(ModBlocks.DECO_29.get());
+        dropSelf(ModBlocks.DECO_30.get());
+        dropSelf(ModBlocks.DECO_31.get());
+        dropSelf(ModBlocks.DECO_32.get());
+        dropSelf(ModBlocks.DECO_33.get());
+        dropSelf(ModBlocks.DECO_34.get());
+        dropSelf(ModBlocks.DECO_35.get());
+        dropSelf(ModBlocks.DECO_36.get());
+        dropSelf(ModBlocks.DECO_37.get());
+        dropSelf(ModBlocks.DECO_38.get());
+        dropSelf(ModBlocks.DECO_39.get());
+        dropSelf(ModBlocks.DECO_40.get());
+        dropSelf(ModBlocks.DECO_41.get());
+        dropSelf(ModBlocks.DECO_42.get());
+        dropSelf(ModBlocks.DECO_43.get());
+        dropSelf(ModBlocks.DECO_44.get());
+        dropSelf(ModBlocks.DECO_45.get());
+        dropSelf(ModBlocks.DECO_46.get());
+        dropSelf(ModBlocks.DECO_47.get());
+        dropSelf(ModBlocks.DECO_48.get());
+        dropSelf(ModBlocks.DECO_49.get());
+        dropSelf(ModBlocks.DECO_50.get());
+        dropSelf(ModBlocks.DECO_51.get());
+        dropSelf(ModBlocks.DECO_52.get());
+        dropSelf(ModBlocks.DECO_53.get());
+        dropSelf(ModBlocks.DECO_54.get());
+        dropSelf(ModBlocks.DECO_55.get());
+        dropSelf(ModBlocks.DECO_56.get());
+        dropSelf(ModBlocks.DECO_57.get());
+        dropSelf(ModBlocks.DECO_58.get());
+
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));
 

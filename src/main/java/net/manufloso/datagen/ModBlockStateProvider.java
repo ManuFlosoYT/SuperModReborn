@@ -45,6 +45,67 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.PALM_FENCE_GATE);
         blockItem(ModBlocks.PALM_TRAPDOOR, "_bottom");
 
+        // DECO BLOCKS
+
+        blockWithItem(ModBlocks.DECO_1);
+        blockWithItem(ModBlocks.DECO_2);
+        blockWithItem(ModBlocks.DECO_3);
+        blockWithItem(ModBlocks.DECO_4);
+        blockWithItem(ModBlocks.DECO_5);
+        blockWithItem(ModBlocks.DECO_6);
+        blockWithItem(ModBlocks.DECO_7);
+        blockWithItem(ModBlocks.DECO_8);
+        blockWithItem(ModBlocks.DECO_9);
+        blockWithItem(ModBlocks.DECO_10);
+        blockWithItem(ModBlocks.DECO_11);
+        blockWithItem(ModBlocks.DECO_12);
+        blockWithItem(ModBlocks.DECO_13);
+        blockWithItem(ModBlocks.DECO_14);
+        blockWithItem(ModBlocks.DECO_15);
+        blockWithItem(ModBlocks.DECO_16);
+        blockWithItem(ModBlocks.DECO_17);
+        blockWithItem(ModBlocks.DECO_18);
+        blockWithItem(ModBlocks.DECO_19);
+        blockWithItem(ModBlocks.DECO_20);
+        blockWithItem(ModBlocks.DECO_21);
+        blockWithItem(ModBlocks.DECO_22);
+        blockWithItem(ModBlocks.DECO_23);
+        blockWithItem(ModBlocks.DECO_24);
+        blockWithItem(ModBlocks.DECO_25);
+        blockWithItem(ModBlocks.DECO_26);
+        blockWithItem(ModBlocks.DECO_27);
+        blockWithItem(ModBlocks.DECO_28);
+        blockWithItem(ModBlocks.DECO_29);
+        blockWithItem(ModBlocks.DECO_30);
+        blockWithItem(ModBlocks.DECO_31);
+        blockWithItem(ModBlocks.DECO_32);
+        blockWithItem(ModBlocks.DECO_33);
+        blockWithItem(ModBlocks.DECO_34);
+        blockWithItem(ModBlocks.DECO_35);
+        blockWithItem(ModBlocks.DECO_36);
+        blockWithItem(ModBlocks.DECO_37);
+        blockWithItem(ModBlocks.DECO_38);
+        blockWithItem(ModBlocks.DECO_39);
+        blockWithItem(ModBlocks.DECO_40);
+        blockWithItem(ModBlocks.DECO_41);
+        blockWithItem(ModBlocks.DECO_42);
+        blockWithItem(ModBlocks.DECO_43);
+        blockWithItem(ModBlocks.DECO_44);
+        blockWithItem(ModBlocks.DECO_45);
+        blockWithItem(ModBlocks.DECO_46);
+        blockWithItem(ModBlocks.DECO_47);
+        blockWithItem(ModBlocks.DECO_48);
+        blockWithItem(ModBlocks.DECO_49);
+        blockWithItem(ModBlocks.DECO_50);
+        blockWithItem(ModBlocks.DECO_51);
+        blockWithItem(ModBlocks.DECO_52);
+        blockWithItem(ModBlocks.DECO_53);
+        blockWithItem(ModBlocks.DECO_54);
+        blockWithItem(ModBlocks.DECO_55);
+        blockWithItem(ModBlocks.DECO_56);
+        blockWithItem(ModBlocks.DECO_57);
+        blockWithItem(ModBlocks.DECO_58);
+
         customLamp();
     }
 

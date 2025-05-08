@@ -1,7 +1,8 @@
-// 1.21.1	2025-05-07T13:08:08.5806458	Item Models: supermodreborn
+// 1.21.1	2025-05-08T12:58:26.2048485	Item Models: supermodreborn
 8fac8a62f3293b9e7bec2e0da24faffd4bfc919d assets/supermodreborn/models/item/cheese.json
 6ef4cfdc0fb3db4483a394f59607c4b4fbaf4232 assets/supermodreborn/models/item/endium_axe.json
 14dafbfa712e298bc1876abdc49a5a04dd6361ba assets/supermodreborn/models/item/endium_hoe.json
+585ea7b77ad33e8b2b22943d25942ad254bae882 assets/supermodreborn/models/item/endium_ingot.json
 a4e6b1f7e57858ef4a7c8144e3012f80344b4077 assets/supermodreborn/models/item/endium_pickaxe.json
 4e1ecc98b65ccf88257597bc4c884d265cec985f assets/supermodreborn/models/item/endium_shovel.json
 e754c434276a7b638458f60a40e6e9b300d176a1 assets/supermodreborn/models/item/endium_sword.json

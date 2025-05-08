@@ -36,6 +36,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ENDIUM_SHOVEL);
         handheldItem(ModItems.ENDIUM_AXE);
         handheldItem(ModItems.ENDIUM_HOE);
+        basicItem(ModItems.ENDIUM_INGOT.get());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

@@ -187,6 +187,474 @@ public class ModBlocks
     );
 
 
+
+    // DECO BLOCKS
+
+    public static final DeferredBlock<Block> DECO_1 = registerBlock(
+            "deco_1",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_2 = registerBlock(
+            "deco_2",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_3 = registerBlock(
+            "deco_3",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_4 = registerBlock(
+            "deco_4",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_5 = registerBlock(
+            "deco_5",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_6 = registerBlock(
+            "deco_6",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_7 = registerBlock(
+            "deco_7",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_8 = registerBlock(
+            "deco_8",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_9 = registerBlock(
+            "deco_9",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_10 = registerBlock(
+            "deco_10",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_11 = registerBlock(
+            "deco_11",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_12 = registerBlock(
+            "deco_12",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_13 = registerBlock(
+            "deco_13",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_14 = registerBlock(
+            "deco_14",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_15 = registerBlock(
+            "deco_15",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_16 = registerBlock(
+            "deco_16",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_17 = registerBlock(
+            "deco_17",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_18 = registerBlock(
+            "deco_18",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_19 = registerBlock(
+            "deco_19",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_20 = registerBlock(
+            "deco_20",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_21 = registerBlock(
+            "deco_21",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_22 = registerBlock(
+            "deco_22",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_23 = registerBlock(
+            "deco_23",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_24 = registerBlock(
+            "deco_24",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_25 = registerBlock(
+            "deco_25",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_26 = registerBlock(
+            "deco_26",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_27 = registerBlock(
+            "deco_27",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_28 = registerBlock(
+            "deco_28",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_29 = registerBlock(
+            "deco_29",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_30 = registerBlock(
+            "deco_30",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_31 = registerBlock(
+            "deco_31",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_32 = registerBlock(
+            "deco_32",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_33 = registerBlock(
+            "deco_33",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_34 = registerBlock(
+            "deco_34",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_35 = registerBlock(
+            "deco_35",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_36 = registerBlock(
+            "deco_36",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_37 = registerBlock(
+            "deco_37",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_38 = registerBlock(
+            "deco_38",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_39 = registerBlock(
+            "deco_39",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_40 = registerBlock(
+            "deco_40",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_41 = registerBlock(
+            "deco_41",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_42 = registerBlock(
+            "deco_42",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_43 = registerBlock(
+            "deco_43",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_44 = registerBlock(
+            "deco_44",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_45 = registerBlock(
+            "deco_45",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_46 = registerBlock(
+            "deco_46",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_47 = registerBlock(
+            "deco_47",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_48 = registerBlock(
+            "deco_48",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_49 = registerBlock(
+            "deco_49",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_50 = registerBlock(
+            "deco_50",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_51 = registerBlock(
+            "deco_51",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_52 = registerBlock(
+            "deco_52",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_53 = registerBlock(
+            "deco_53",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_54 = registerBlock(
+            "deco_54",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_55 = registerBlock(
+            "deco_55",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_56 = registerBlock(
+            "deco_56",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_57 = registerBlock(
+            "deco_57",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> DECO_58 = registerBlock(
+            "deco_58",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
