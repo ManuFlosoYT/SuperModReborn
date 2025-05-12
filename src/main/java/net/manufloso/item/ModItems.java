@@ -1,9 +1,7 @@
 package net.manufloso.item;
 
-import net.manufloso.item.custom.FuelItem;
-import net.manufloso.item.custom.HammerItem;
-import net.manufloso.item.custom.LauncherItem;
-import net.manufloso.item.custom.TeleportLinkItem;
+import net.manufloso.block.ModBlocks;
+import net.manufloso.item.custom.*;
 import net.manufloso.supermodreborn;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
@@ -64,6 +62,32 @@ public class ModItems
     public static final DeferredItem<HammerItem> ENDIUM_HAMMER = ITEMS.register("endium_hammer",
             () -> new HammerItem(ModToolTiers.ENDIUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 4F, -3.5f))));
+
+
+    public static final DeferredItem<ArmorItem> ENDIUM_HELMET = ITEMS.register("endium_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.ENDIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(200))));
+    public static final DeferredItem<ArmorItem> ENDIUM_CHESTPLATE = ITEMS.register("endium_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.ENDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(200))));
+    public static final DeferredItem<ArmorItem> ENDIUM_LEGGINGS = ITEMS.register("endium_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.ENDIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(200))));
+    public static final DeferredItem<ArmorItem> ENDIUM_BOOTS = ITEMS.register("endium_boots",
+            () -> new ModArmorItem(ModArmorMaterials.ENDIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(200))));
+
+    public static final DeferredItem<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.TOMATO
+                    )
+            )
+    );
+    public static final DeferredItem<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+
+    public static final DeferredItem<Item> ENDIUM_SCRAP = ITEMS.register("endium_scrap",
+            () -> new Item(new Item.Properties()));
 
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));

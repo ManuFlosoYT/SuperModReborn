@@ -1,6 +1,8 @@
 package net.manufloso.block.custom;
 
+import net.manufloso.sound.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -25,7 +27,6 @@ public class EndLamp extends Block
             boolean currentState = state.getValue(CLICKED);
             level.setBlockAndUpdate(pos, state.setValue(CLICKED, !currentState));
         }
-
         return InteractionResult.SUCCESS;
     }
 

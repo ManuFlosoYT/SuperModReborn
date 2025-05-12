@@ -1,10 +1,12 @@
 package net.manufloso.item.custom;
 
 import net.manufloso.component.ModDataComponents;
+import net.manufloso.sound.ModSounds;
 import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -40,9 +42,11 @@ public class TeleportLinkItem extends Item
 
             if(player.isCrouching()){
                 itemstack.set(ModDataComponents.COORDINATES, null);
+                level.playSound(null, pos, ModSounds.BEEP.get(), SoundSource.PLAYERS, 1f, 1.8f);
             }
             else {
                 itemstack.set(ModDataComponents.COORDINATES, pos);
+                level.playSound(null, pos, ModSounds.BEEP.get(), SoundSource.PLAYERS, 1f, 2f);
             }
 
             // Return SUCCESS to indicate the action was handled successfully on the server

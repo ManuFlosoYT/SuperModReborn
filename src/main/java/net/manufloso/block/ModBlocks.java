@@ -2,6 +2,7 @@ package net.manufloso.block;
 
 import net.manufloso.block.custom.ChunkLoader;
 import net.manufloso.block.custom.EndLamp;
+import net.manufloso.block.custom.TomatoCropBlock;
 import net.manufloso.item.ModItems;
 import net.manufloso.supermodreborn;
 import net.minecraft.world.item.BlockItem;
@@ -648,6 +649,17 @@ public class ModBlocks
 
     public static final DeferredBlock<Block> DECO_58 = registerBlock(
             "deco_58",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
+
+    public static final DeferredBlock<Block> ENDIUM_ORE = registerBlock(
+            "endium_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f)
                     .explosionResistance(15f)

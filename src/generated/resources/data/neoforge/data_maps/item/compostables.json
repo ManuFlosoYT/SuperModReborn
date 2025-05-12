@@ -1,0 +1,10 @@
+{
+  "values": {
+    "supermodreborn:tomato": {
+      "chance": 0.45
+    },
+    "supermodreborn:tomato_seeds": {
+      "chance": 0.25
+    }
+  }
+}

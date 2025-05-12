@@ -1,7 +1,6 @@
 package net.manufloso.item;
 
-import net.manufloso.item.util.ModTags;
-import net.minecraft.world.item.Items;
+import net.manufloso.util.ModTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.SimpleTier;

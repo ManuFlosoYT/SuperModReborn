@@ -1,7 +1,9 @@
 package net.manufloso.datagen;
 
 import net.manufloso.block.ModBlocks;
+import net.manufloso.block.custom.TomatoCropBlock;
 import net.manufloso.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -15,6 +17,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 
@@ -115,6 +119,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DECO_56.get());
         dropSelf(ModBlocks.DECO_57.get());
         dropSelf(ModBlocks.DECO_58.get());
+
+
+
+        LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 2));
+
+        this.add(ModBlocks.TOMATO_CROP.get(), this.createCropDrops(ModBlocks.TOMATO_CROP.get(),
+                ModItems.TOMATO.get(), ModItems.TOMATO_SEEDS.get(), lootItemConditionBuilder));
+
+        add(ModBlocks.ENDIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.ENDIUM_ORE.get(), ModItems.ENDIUM_SCRAP.get()));
 
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));

@@ -32,6 +32,10 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.ENDIUM_SHOVEL);
                         output.accept(ModItems.ENDIUM_HOE);
                         output.accept(ModItems.ENDIUM_HAMMER);
+                        output.accept(ModItems.ENDIUM_HELMET);
+                        output.accept(ModItems.ENDIUM_CHESTPLATE);
+                        output.accept(ModItems.ENDIUM_LEGGINGS);
+                        output.accept(ModItems.ENDIUM_BOOTS);
                     })
                     .build());
 
@@ -42,6 +46,8 @@ public class ModCreativeModeTabs
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CHEESE);
+                        output.accept(ModItems.TOMATO);
+                        output.accept(ModItems.TOMATO_SEEDS);
                     })
                     .build());
 

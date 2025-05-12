@@ -5,6 +5,7 @@
   "creative_tab.supermodreborn.resources": "Supermod Reborn: Resources",
   "creative_tab.supermodreborn.decoration": "Supermod Reborn: Decoration",
   "creative_tab.supermodreborn.utilities": "Supermod Reborn: Utilities",
+
   "block.supermodreborn.lithium_ore": "Lithium Ore",
   "block.supermodreborn.deepslate_lithium_ore": "Deepslate Lithium Ore",
   "block.supermodreborn.lithium_block": "Lithium Block",
@@ -78,6 +79,9 @@
   "block.supermodreborn.deco_56": "Decorative Block #56",
   "block.supermodreborn.deco_57": "Decorative Block #57",
   "block.supermodreborn.deco_58": "Decorative Block #58",
+  "block.supermodreborn.tomato_crop": "Tomato Crop",
+  "block.supermodreborn.endium_ore": "Endium Ore",
+
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
   "item.supermodreborn.launcher": "Launcher",
@@ -90,7 +94,25 @@
   "item.supermodreborn.endium_hoe": "Endium Hoe",
   "item.supermodreborn.endium_hammer": "Endium Hammer",
   "item.supermodreborn.endium_ingot": "Endium Ingot",
+  "item.supermodreborn.endium_helmet": "Endium Helmet",
+  "item.supermodreborn.endium_chestplate": "Endium Chestplate",
+  "item.supermodreborn.endium_leggings": "Endium Leggings",
+  "item.supermodreborn.endium_boots": "Endium Boots",
+  "item.supermodreborn.tomato": "Tomato",
+  "item.supermodreborn.tomato_seeds": "Tomato Seeds",
+  "item.supermodreborn.endium_scrap": "Endium Scrap",
+
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
-  "tooltip.supermodreborn.teleport_link": "Right click on a block to save the location \nShift Right Click to erase saved data"
+  "tooltip.supermodreborn.teleport_link": "Right click on a block to save the location \nShift Right Click to erase saved data",
+
+  "sounds.supermodreborn.beep": "Beep",
+  "sounds.supermodreborn.transaction": "Transaction",
+  "sounds.supermodreborn.coin": "Coin drops",
+  "sounds.supermodreborn.coins": "Coins drop",
+
+  "painting.supermodreborn.random_painting.title": "Random Painting",
+  "painting.supermodreborn.random_painting.author": "ManuFloso",
+
+  "enchantment.supermodreborn.lightning_striker": "Lightning Striker"
 }

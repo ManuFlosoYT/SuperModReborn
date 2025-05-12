@@ -3,8 +3,10 @@ package net.manufloso;
 import com.mojang.logging.LogUtils;
 import net.manufloso.block.ModBlocks;
 import net.manufloso.component.ModDataComponents;
+import net.manufloso.enchantment.ModEnchantmentEffects;
 import net.manufloso.item.ModCreativeModeTabs;
 import net.manufloso.item.ModItems;
+import net.manufloso.sound.ModSounds;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
 import net.neoforged.api.distmarker.Dist;
@@ -41,7 +43,8 @@ public class supermodreborn
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
-
+        ModSounds.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

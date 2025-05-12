@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-08T12:45:35.9045674	Loot Tables
+// 1.21.1	2025-05-12T12:01:28.0606434	Loot Tables
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
 b04ebe473bff297dc661b3cabfedc35de308fb47 data/supermodreborn/loot_table/blocks/deco_1.json
 5cd7e8d4552b40a4f870a4cc917948b4428fc8b2 data/supermodreborn/loot_table/blocks/deco_10.json
@@ -59,6 +59,7 @@ deb7e37d766e96b332cf3b6889d4d38aedfe60a5 data/supermodreborn/loot_table/blocks/d
 131ac8c968ffbcf065b72f870417ab6bf944a91e data/supermodreborn/loot_table/blocks/deco_8.json
 a8a71568526dd0ffec94a30f72ac1d4a04b19425 data/supermodreborn/loot_table/blocks/deco_9.json
 7d0ac1196124f0aa00ad45459b5a2af29030d728 data/supermodreborn/loot_table/blocks/deepslate_lithium_ore.json
+3f834c5f8969ef117ee22743f93aa64ab93dcdd7 data/supermodreborn/loot_table/blocks/endium_ore.json
 99189eda4e27eda70176f583f59c4262964712e0 data/supermodreborn/loot_table/blocks/end_lamp.json
 0deae033e778190a585eb1121916147107434a61 data/supermodreborn/loot_table/blocks/lithium_block.json
 480153e640b5dc7c118872cd37a7d381e71f1e51 data/supermodreborn/loot_table/blocks/lithium_ore.json
@@ -72,3 +73,4 @@ ed54cf494f212dc16c01eb92a2a36987d9066142 data/supermodreborn/loot_table/blocks/p
 4814c6d907afcea599dc82340bbcbea8f14f1514 data/supermodreborn/loot_table/blocks/palm_stairs.json
 4acbbc18799f398e9b24e67fb351a1606857d278 data/supermodreborn/loot_table/blocks/palm_trapdoor.json
 9a66f4739bcdac2182a13776b69cba984414b76a data/supermodreborn/loot_table/blocks/palm_wall.json
+436370419a971c586cee6d91c4e7cc7e48723011 data/supermodreborn/loot_table/blocks/tomato_crop.json

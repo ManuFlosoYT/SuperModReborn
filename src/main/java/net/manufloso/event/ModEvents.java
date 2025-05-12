@@ -31,7 +31,7 @@ public class ModEvents {
             }
 
             for(BlockPos pos : HammerItem.getBlocksToBeDestroyed(1, initialBlockPos, serverPlayer)) {
-                if(pos == initialBlockPos || !hammer.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
+                if(pos.equals(initialBlockPos) || !hammer.isCorrectToolForDrops(mainHandItem, event.getLevel().getBlockState(pos))) {
                     continue;
                 }
 
@@ -39,8 +39,6 @@ public class ModEvents {
                 serverPlayer.gameMode.destroyBlock(pos);
                 HARVESTED_BLOCKS.remove(pos);
             }
-
-            mainHandItem.setDamageValue(mainHandItem.getDamageValue() - 1);
         }
     }
 }

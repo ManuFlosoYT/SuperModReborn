@@ -1,7 +1,7 @@
 package net.manufloso.datagen;
 
 import net.manufloso.block.ModBlocks;
-import net.manufloso.item.util.ModTags;
+import net.manufloso.util.ModTags;
 import net.manufloso.supermodreborn;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;

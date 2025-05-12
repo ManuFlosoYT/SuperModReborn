@@ -1,0 +1,26 @@
+{
+  "beep": {
+    "subtitle": "sounds.supermodreborn.beep",
+    "sounds": [
+      "supermodreborn:beep"
+    ]
+  },
+  "transaction": {
+    "subtitle": "sounds.supermodreborn.transaction",
+    "sounds": [
+      "supermodreborn:transaction"
+    ]
+  },
+  "coin": {
+    "subtitle": "sounds.supermodreborn.coin",
+    "sounds": [
+      "supermodreborn:coin"
+    ]
+  },
+  "coins": {
+    "subtitle": "sounds.supermodreborn.coins",
+    "sounds": [
+      "supermodreborn:coins"
+    ]
+  }
+}

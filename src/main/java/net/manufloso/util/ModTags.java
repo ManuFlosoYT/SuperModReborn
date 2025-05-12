@@ -1,4 +1,4 @@
-package net.manufloso.item.util;
+package net.manufloso.util;
 
 import net.manufloso.supermodreborn;
 import net.minecraft.resources.ResourceLocation;

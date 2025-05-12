@@ -2,13 +2,12 @@ package net.manufloso.datagen;
 
 import net.manufloso.block.ModBlocks;
 import net.manufloso.item.ModItems;
-import net.manufloso.item.util.ModTags;
+import net.manufloso.util.ModTags;
 import net.manufloso.supermodreborn;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -51,5 +50,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.ENDIUM_HOE.get())
         ;
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ENDIUM_HELMET.get())
+                .add(ModItems.ENDIUM_CHESTPLATE.get())
+                .add(ModItems.ENDIUM_LEGGINGS.get())
+                .add(ModItems.ENDIUM_BOOTS.get());
     }
 }
