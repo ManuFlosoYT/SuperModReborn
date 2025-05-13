@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:beach",
+    "#c:is_hot/overworld"
+  ]
+}

@@ -133,5 +133,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .remove(ModTags.Blocks.NEEDS_ENDIUM_TOOL)
         ;
 
+
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PALM_LOG.get())
+                .add(ModBlocks.PALM_WOOD.get())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get())
+        ;
+
     }
 }

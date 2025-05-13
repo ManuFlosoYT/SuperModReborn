@@ -81,6 +81,12 @@
   "block.supermodreborn.deco_58": "Decorative Block #58",
   "block.supermodreborn.tomato_crop": "Tomato Crop",
   "block.supermodreborn.endium_ore": "Endium Ore",
+  "block.supermodreborn.palm_log": "Palm Log",
+  "block.supermodreborn.palm_wood": "Palm Wood",
+  "block.supermodreborn.stripped_palm_log": "Stripped Palm Log",
+  "block.supermodreborn.stripped_palm_wood": "Stripped Palm Wood",
+  "block.supermodreborn.palm_sapling": "Palm Sapling",
+  "block.supermodreborn.palm_leaves": "Palm Leaves",
 
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",

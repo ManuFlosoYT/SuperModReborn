@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-12T12:01:28.0606434	Loot Tables
+// 1.21.1	2025-05-12T17:39:10.1218342	Loot Tables
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
 b04ebe473bff297dc661b3cabfedc35de308fb47 data/supermodreborn/loot_table/blocks/deco_1.json
 5cd7e8d4552b40a4f870a4cc917948b4428fc8b2 data/supermodreborn/loot_table/blocks/deco_10.json
@@ -67,10 +67,16 @@ a8a71568526dd0ffec94a30f72ac1d4a04b19425 data/supermodreborn/loot_table/blocks/d
 2002200bd80aeda860dfad2ff55d65b84b878b77 data/supermodreborn/loot_table/blocks/palm_door.json
 617a14289908a232a98b9b0c53e583ab5de128db data/supermodreborn/loot_table/blocks/palm_fence.json
 134d0c563687dc187c49a7b1eb5de2367bf05d64 data/supermodreborn/loot_table/blocks/palm_fence_gate.json
+3cf8f2072663aa843cba55ff11aab164071363f2 data/supermodreborn/loot_table/blocks/palm_leaves.json
+dabc5d614383341689a8324b9f9e7ea5e17babf5 data/supermodreborn/loot_table/blocks/palm_log.json
 d076b80e06472299ed7545235b4ffb4361edfd59 data/supermodreborn/loot_table/blocks/palm_planks.json
 ed54cf494f212dc16c01eb92a2a36987d9066142 data/supermodreborn/loot_table/blocks/palm_pressure_plate.json
+2f1f5cdd717ab6d2ae9fd916509b6ebd848e325c data/supermodreborn/loot_table/blocks/palm_sapling.json
 3ad8d309ae8cfc75cd8ea69780c0f330deff7b6e data/supermodreborn/loot_table/blocks/palm_slab.json
 4814c6d907afcea599dc82340bbcbea8f14f1514 data/supermodreborn/loot_table/blocks/palm_stairs.json
 4acbbc18799f398e9b24e67fb351a1606857d278 data/supermodreborn/loot_table/blocks/palm_trapdoor.json
 9a66f4739bcdac2182a13776b69cba984414b76a data/supermodreborn/loot_table/blocks/palm_wall.json
+d699bb6081d994838b51bfc18e3caa82546346c6 data/supermodreborn/loot_table/blocks/palm_wood.json
+2726b673a26df6926fbb17d422756136d31f49a8 data/supermodreborn/loot_table/blocks/stripped_palm_log.json
+03f872561096c57687d909606fcdd99fc5ec4b9c data/supermodreborn/loot_table/blocks/stripped_palm_wood.json
 436370419a971c586cee6d91c4e7cc7e48723011 data/supermodreborn/loot_table/blocks/tomato_crop.json

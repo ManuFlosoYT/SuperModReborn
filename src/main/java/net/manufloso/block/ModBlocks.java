@@ -1,19 +1,24 @@
 package net.manufloso.block;
 
-import net.manufloso.block.custom.ChunkLoader;
-import net.manufloso.block.custom.EndLamp;
-import net.manufloso.block.custom.TomatoCropBlock;
+import net.manufloso.block.custom.*;
 import net.manufloso.item.ModItems;
 import net.manufloso.supermodreborn;
+import net.manufloso.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -57,15 +62,125 @@ public class ModBlocks
                     .sound(SoundType.STONE)
             ));
 
-    public static final DeferredBlock<Block> PALM_PLANKS = registerBlock(
-            "palm_planks",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f)
-                    .explosionResistance(3f)
-                    .ignitedByLava()
-                    .sound(SoundType.WOOD)
-            )
-    );
+    public static final DeferredBlock<Block> PALM_LOG = registerBlock("palm_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> PALM_WOOD = registerBlock("palm_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> PALM_PLANKS = registerBlock("palm_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> PALM_LEAVES = registerBlock("palm_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_LEAVES)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+            });
+    public static final DeferredBlock<Block> PALM_SAPLING = registerBlock("palm_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.PALM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)) {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
 
     public static final DeferredBlock<StairBlock> PALM_STAIRS = registerBlock(
@@ -78,7 +193,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
     public static final DeferredBlock<SlabBlock> PALM_SLAB = registerBlock(
             "palm_slab",
             () -> new SlabBlock(
@@ -88,8 +218,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
 
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
     public static final DeferredBlock<PressurePlateBlock> PALM_PRESSURE_PLATE = registerBlock(
             "palm_pressure_plate",
             () -> new PressurePlateBlock(
@@ -100,7 +244,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<ButtonBlock> PALM_BUTTON = registerBlock(
             "palm_button",
@@ -114,7 +273,22 @@ public class ModBlocks
                             .sound(SoundType.WOOD)
                             .noCollission()
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<FenceBlock> PALM_FENCE = registerBlock(
             "palm_fence",
@@ -125,7 +299,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<FenceGateBlock> PALM_FENCE_GATE = registerBlock(
             "palm_fence_gate",
@@ -137,7 +326,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<WallBlock> PALM_WALL = registerBlock(
             "palm_wall",
@@ -148,7 +352,22 @@ public class ModBlocks
                             .ignitedByLava()
                             .sound(SoundType.WOOD)
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<DoorBlock> PALM_DOOR = registerBlock(
             "palm_door",
@@ -161,7 +380,22 @@ public class ModBlocks
                             .sound(SoundType.WOOD)
                             .noOcclusion()
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<TrapDoorBlock> PALM_TRAPDOOR = registerBlock(
             "palm_trapdoor",
@@ -174,7 +408,22 @@ public class ModBlocks
                             .sound(SoundType.WOOD)
                             .noOcclusion()
             )
-    );
+            {
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final DeferredBlock<Block> END_LAMP = registerBlock(
             "end_lamp",
@@ -665,6 +914,9 @@ public class ModBlocks
                     .explosionResistance(15f)
                     .sound(SoundType.STONE)
             ));
+
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)

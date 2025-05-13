@@ -55,6 +55,18 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ENDIUM_HELMET.get())
                 .add(ModItems.ENDIUM_CHESTPLATE.get())
                 .add(ModItems.ENDIUM_LEGGINGS.get())
-                .add(ModItems.ENDIUM_BOOTS.get());
+                .add(ModItems.ENDIUM_BOOTS.get())
+        ;
+
+
+
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PALM_LOG.get().asItem())
+                .add(ModBlocks.PALM_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get().asItem());
+
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.PALM_PLANKS.asItem());
     }
 }

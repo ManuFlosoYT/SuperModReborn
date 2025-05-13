@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#supermodreborn:palm_can_spawn_in",
+  "features": "supermodreborn:palm_placed",
+  "step": "vegetal_decoration"
+}

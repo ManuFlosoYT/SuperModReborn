@@ -38,7 +38,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get()));
 
         dropSelf(ModBlocks.CHUNK_LOADER.get());
-        dropSelf(ModBlocks.PALM_PLANKS.get());
 
 
         dropSelf(ModBlocks.PALM_STAIRS.get());
@@ -130,6 +129,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.ENDIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.ENDIUM_ORE.get(), ModItems.ENDIUM_SCRAP.get()));
+
+
+
+        this.dropSelf(ModBlocks.PALM_LOG.get());
+        this.dropSelf(ModBlocks.PALM_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PALM_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PALM_WOOD.get());
+        this.dropSelf(ModBlocks.PALM_PLANKS.get());
+        this.dropSelf(ModBlocks.PALM_SAPLING.get());
+
+        this.add(ModBlocks.PALM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PALM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));

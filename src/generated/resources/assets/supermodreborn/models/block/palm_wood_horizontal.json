@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "supermodreborn:block/palm_log",
+    "side": "supermodreborn:block/palm_log"
+  }
+}

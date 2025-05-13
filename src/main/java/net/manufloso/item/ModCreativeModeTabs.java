@@ -72,6 +72,12 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creative_tab.supermodreborn.decoration"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_resources"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.PALM_LOG);
+                        output.accept(ModBlocks.STRIPPED_PALM_LOG);
+                        output.accept(ModBlocks.PALM_WOOD);
+                        output.accept(ModBlocks.STRIPPED_PALM_WOOD);
+                        output.accept(ModBlocks.PALM_LEAVES);
+                        output.accept(ModBlocks.PALM_SAPLING);
                         output.accept(ModBlocks.PALM_PLANKS);
                         output.accept(ModBlocks.PALM_DOOR);
                         output.accept(ModBlocks.PALM_TRAPDOOR);

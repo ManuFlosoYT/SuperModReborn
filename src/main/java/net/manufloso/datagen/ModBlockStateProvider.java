@@ -4,9 +4,12 @@ import net.manufloso.block.ModBlocks;
 import net.manufloso.block.custom.EndLamp;
 import net.manufloso.block.custom.TomatoCropBlock;
 import net.manufloso.supermodreborn;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -26,10 +29,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LITHIUM_BLOCK);
         blockWithItem(ModBlocks.LITHIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_LITHIUM_ORE);
-
-        blockWithItem(ModBlocks.PALM_PLANKS);
         blockWithItem(ModBlocks.CHUNK_LOADER);
-
+        blockWithItem(ModBlocks.PALM_PLANKS);
 
         stairsBlock(ModBlocks.PALM_STAIRS.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
         slabBlock(ModBlocks.PALM_SLAB.get(), blockTexture(ModBlocks.PALM_PLANKS.get()), blockTexture(ModBlocks.PALM_PLANKS.get()));
@@ -115,7 +116,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         customLamp();
         makeCrop(((CropBlock) ModBlocks.TOMATO_CROP.get()), "tomato_crop_stage", "tomato_crop_stage");
+
+
+        logBlock(((RotatedPillarBlock) ModBlocks.PALM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PALM_WOOD.get()), blockTexture(ModBlocks.PALM_LOG.get()), blockTexture(ModBlocks.PALM_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALM_WOOD.get()), blockTexture(ModBlocks.STRIPPED_PALM_LOG.get()), blockTexture(ModBlocks.STRIPPED_PALM_LOG.get()));
+
+        blockItem(ModBlocks.PALM_LOG);
+        blockItem(ModBlocks.PALM_WOOD);
+        blockItem(ModBlocks.STRIPPED_PALM_LOG);
+        blockItem(ModBlocks.STRIPPED_PALM_WOOD);
+
+
+
+        leavesBlock(ModBlocks.PALM_LEAVES);
+        saplingBlock(ModBlocks.PALM_SAPLING);
+
     }
+
+    private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> states(state, block, modelName, textureName);
