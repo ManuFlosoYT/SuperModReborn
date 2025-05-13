@@ -124,7 +124,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 2));
 
-        this.add(ModBlocks.TOMATO_CROP.get(), this.createCropDrops(ModBlocks.TOMATO_CROP.get(),
+        add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(),
                 ModItems.TOMATO.get(), ModItems.TOMATO_SEEDS.get(), lootItemConditionBuilder));
 
         add(ModBlocks.ENDIUM_ORE.get(),
@@ -132,15 +132,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
 
 
-        this.dropSelf(ModBlocks.PALM_LOG.get());
-        this.dropSelf(ModBlocks.PALM_WOOD.get());
-        this.dropSelf(ModBlocks.STRIPPED_PALM_LOG.get());
-        this.dropSelf(ModBlocks.STRIPPED_PALM_WOOD.get());
-        this.dropSelf(ModBlocks.PALM_PLANKS.get());
-        this.dropSelf(ModBlocks.PALM_SAPLING.get());
+        dropSelf(ModBlocks.PALM_LOG.get());
+        dropSelf(ModBlocks.PALM_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_PALM_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_PALM_WOOD.get());
+        dropSelf(ModBlocks.PALM_PLANKS.get());
+        dropSelf(ModBlocks.PALM_SAPLING.get());
 
-        this.add(ModBlocks.PALM_LEAVES.get(), block ->
+        add(ModBlocks.PALM_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PALM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        
+        dropSelf(ModBlocks.HOLLOW_OAK_LOG.get());
+        dropSelf(ModBlocks.HOLLOW_STRIPPED_OAK_LOG.get());
 
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));
@@ -148,9 +151,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createSilkTouchDispatchTable(pBlock,
-                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return createSilkTouchDispatchTable(pBlock,
+                applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                         .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
     }

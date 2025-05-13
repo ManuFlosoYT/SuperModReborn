@@ -15,6 +15,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -916,7 +918,41 @@ public class ModBlocks
             ));
 
 
+    public static final DeferredBlock<Block> HOLLOW_OAK_LOG = registerBlock("hollow_oak_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
 
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_OAK_LOG = registerBlock("hollow_stripped_oak_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
