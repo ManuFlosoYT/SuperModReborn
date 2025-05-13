@@ -55,6 +55,15 @@ public class ModBlocks
                     .sound(SoundType.COPPER)
             ));
 
+    public static final DeferredBlock<Block> ENDIUM_BLOCK = registerBlock(
+            "endium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .explosionResistance(5000f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)
+            ));
+
     public static final DeferredBlock<Block> CHUNK_LOADER = registerBlock(
             "chunk_loader",
             () -> new ChunkLoader(BlockBehaviour.Properties.of()

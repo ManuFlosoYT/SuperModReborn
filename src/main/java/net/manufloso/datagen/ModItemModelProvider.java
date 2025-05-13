@@ -70,6 +70,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TOMATO.get());
 
         saplingItem(ModBlocks.PALM_SAPLING);
+        basicItem(ModItems.ENDIUM_SCRAP.get());
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

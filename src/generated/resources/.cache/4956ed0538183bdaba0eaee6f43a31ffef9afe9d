@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-12T17:39:10.1143222	Item Models: supermodreborn
+// 1.21.1	2025-05-13T17:34:22.2816514	Item Models: supermodreborn
 8fac8a62f3293b9e7bec2e0da24faffd4bfc919d assets/supermodreborn/models/item/cheese.json
 6ef4cfdc0fb3db4483a394f59607c4b4fbaf4232 assets/supermodreborn/models/item/endium_axe.json
 4bd423d09e5ffee256ba778862a574038317a217 assets/supermodreborn/models/item/endium_boots.json
@@ -48,6 +48,7 @@ d49492b03e2d7f5f13d6e74ab799c66490157871 assets/supermodreborn/models/item/endiu
 389c52da8b86a06ebef8932d64ede48c7a242111 assets/supermodreborn/models/item/endium_leggings_quartz_trim.json
 ff6b5d1e7a7ada74edc343d0731d258e690f37fb assets/supermodreborn/models/item/endium_leggings_redstone_trim.json
 a4e6b1f7e57858ef4a7c8144e3012f80344b4077 assets/supermodreborn/models/item/endium_pickaxe.json
+527a7bb8ba8cf2e45fc63dc4687f31a35098c626 assets/supermodreborn/models/item/endium_scrap.json
 4e1ecc98b65ccf88257597bc4c884d265cec985f assets/supermodreborn/models/item/endium_shovel.json
 e754c434276a7b638458f60a40e6e9b300d176a1 assets/supermodreborn/models/item/endium_sword.json
 b2d45f1011602c021149e22dc01da4051f062d5b assets/supermodreborn/models/item/launcher.json

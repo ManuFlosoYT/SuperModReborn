@@ -20,6 +20,7 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
@@ -144,6 +145,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         
         dropSelf(ModBlocks.HOLLOW_OAK_LOG.get());
         dropSelf(ModBlocks.HOLLOW_STRIPPED_OAK_LOG.get());
+        dropSelf(ModBlocks.ENDIUM_BLOCK.get());
 
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));

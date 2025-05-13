@@ -62,7 +62,10 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.LITHIUM_BLOCK);
                         output.accept(ModBlocks.LITHIUM_ORE);
                         output.accept(ModBlocks.DEEPSLATE_LITHIUM_ORE);
+                        output.accept(ModBlocks.ENDIUM_ORE);
+                        output.accept(ModItems.ENDIUM_SCRAP);
                         output.accept(ModItems.ENDIUM_INGOT);
+                        output.accept(ModBlocks.ENDIUM_BLOCK);
                     })
                     .build());
 

@@ -133,6 +133,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.PALM_LEAVES);
         saplingBlock(ModBlocks.PALM_SAPLING);
 
+        blockWithItem(ModBlocks.ENDIUM_BLOCK);
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-13T15:29:56.6554778	Loot Tables
+// 1.21.1	2025-05-13T17:29:12.5358572	Loot Tables
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
 b04ebe473bff297dc661b3cabfedc35de308fb47 data/supermodreborn/loot_table/blocks/deco_1.json
 5cd7e8d4552b40a4f870a4cc917948b4428fc8b2 data/supermodreborn/loot_table/blocks/deco_10.json
@@ -59,9 +59,11 @@ deb7e37d766e96b332cf3b6889d4d38aedfe60a5 data/supermodreborn/loot_table/blocks/d
 131ac8c968ffbcf065b72f870417ab6bf944a91e data/supermodreborn/loot_table/blocks/deco_8.json
 a8a71568526dd0ffec94a30f72ac1d4a04b19425 data/supermodreborn/loot_table/blocks/deco_9.json
 7d0ac1196124f0aa00ad45459b5a2af29030d728 data/supermodreborn/loot_table/blocks/deepslate_lithium_ore.json
+a4ef3a0a6d5de15f13cc3d2a34f3c47d555eac3c data/supermodreborn/loot_table/blocks/endium_block.json
 3f834c5f8969ef117ee22743f93aa64ab93dcdd7 data/supermodreborn/loot_table/blocks/endium_ore.json
 99189eda4e27eda70176f583f59c4262964712e0 data/supermodreborn/loot_table/blocks/end_lamp.json
 d5e39b195259f7a29a687d2693fe6ffbb9b6d889 data/supermodreborn/loot_table/blocks/hollow_oak_log.json
+c6a4f548e73606d611a365e035104e3916010d9c data/supermodreborn/loot_table/blocks/hollow_stripped_oak_log.json
 0deae033e778190a585eb1121916147107434a61 data/supermodreborn/loot_table/blocks/lithium_block.json
 480153e640b5dc7c118872cd37a7d381e71f1e51 data/supermodreborn/loot_table/blocks/lithium_ore.json
 610c2d19356c83955f0073b0c1db26ecdcf4570c data/supermodreborn/loot_table/blocks/palm_button.json
@@ -78,7 +80,6 @@ ed54cf494f212dc16c01eb92a2a36987d9066142 data/supermodreborn/loot_table/blocks/p
 4acbbc18799f398e9b24e67fb351a1606857d278 data/supermodreborn/loot_table/blocks/palm_trapdoor.json
 9a66f4739bcdac2182a13776b69cba984414b76a data/supermodreborn/loot_table/blocks/palm_wall.json
 d699bb6081d994838b51bfc18e3caa82546346c6 data/supermodreborn/loot_table/blocks/palm_wood.json
-7aea9935127ca8ba7c39140e30de5a526b037fed data/supermodreborn/loot_table/blocks/stripped_hollow_oak_log.json
 2726b673a26df6926fbb17d422756136d31f49a8 data/supermodreborn/loot_table/blocks/stripped_palm_log.json
 03f872561096c57687d909606fcdd99fc5ec4b9c data/supermodreborn/loot_table/blocks/stripped_palm_wood.json
 436370419a971c586cee6d91c4e7cc7e48723011 data/supermodreborn/loot_table/blocks/tomato_crop.json

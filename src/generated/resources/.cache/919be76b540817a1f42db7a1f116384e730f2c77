@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-12T17:39:10.1283407	Block States: supermodreborn
+// 1.21.1	2025-05-13T17:34:22.287652	Block States: supermodreborn
 8a11a6500c07e656951e247b24f312019903c641 assets/supermodreborn/blockstates/chunk_loader.json
 bc6aa37d361746968d58447b7fab25ffb54376c9 assets/supermodreborn/blockstates/deco_1.json
 59a7081011ab8c77fe346586cdc9189d8b10c8aa assets/supermodreborn/blockstates/deco_10.json
@@ -59,6 +59,7 @@ b8f0ff0c09d08c9200922f9551450f57025df7d4 assets/supermodreborn/blockstates/deco_
 02361465b018c645b809c24697ad4f5482bd8691 assets/supermodreborn/blockstates/deco_8.json
 0c4d6e034b711d5d7f0b7f08f895e748ede85647 assets/supermodreborn/blockstates/deco_9.json
 07df2702ffb9f1317ee2b099c6963082d928c098 assets/supermodreborn/blockstates/deepslate_lithium_ore.json
+6a004861e6f9de0ce868c6e5b05932619ed42f7b assets/supermodreborn/blockstates/endium_block.json
 874fd41dcd148b0b39d7dea91a8d424b7b1cb98f assets/supermodreborn/blockstates/endium_ore.json
 13ad817ad4fb0316afd1e1acd8dc91e842354455 assets/supermodreborn/blockstates/end_lamp.json
 04ee025620dc6e6a97adbca0a890af9b730224b7 assets/supermodreborn/blockstates/lithium_block.json
@@ -140,6 +141,7 @@ bd5a4f431d6361ed8014c8270fab44da60a319c6 assets/supermodreborn/models/block/deco
 8f0f406cf1601a52733e9ad6411085b1219465d8 assets/supermodreborn/models/block/deco_8.json
 fb52682b0c2e9aae473081b69f127a3891f19d9b assets/supermodreborn/models/block/deco_9.json
 eebc80a44b1b14c22bba1ba366167f6754a176a4 assets/supermodreborn/models/block/deepslate_lithium_ore.json
+baff566fa8a719a6058c3bb43e09878e09dcb403 assets/supermodreborn/models/block/endium_block.json
 80c9e45ac3c2d79307bcd2efbfc034f858cf7ac2 assets/supermodreborn/models/block/endium_ore.json
 7496e72cf84a9e40b943fee4b75c722bee0ae7e1 assets/supermodreborn/models/block/end_lamp_off.json
 bfd36fa6458a89c3f27ba1aa95025f08b6d7470a assets/supermodreborn/models/block/end_lamp_on.json
@@ -248,6 +250,7 @@ b20b94beeab3e6ec1a4e9b414641e464bece9760 assets/supermodreborn/models/item/deco_
 57a94a02ff8bca78e61c74ff8b4af3cb49434fc7 assets/supermodreborn/models/item/deco_8.json
 6c9b14bc97fd0dfab1fac647f8c8c08c13f05533 assets/supermodreborn/models/item/deco_9.json
 f1933e891cde4f3ab255da2f67a013dd43514ab4 assets/supermodreborn/models/item/deepslate_lithium_ore.json
+23fa50fddf8e9f69693a4204884095cd53a51667 assets/supermodreborn/models/item/endium_block.json
 2c6b4f2a9df486de9b24a5fa66cf7598ba6f08f9 assets/supermodreborn/models/item/endium_ore.json
 fad77a08ad017670525ea3eb0b0b9b05a76c025f assets/supermodreborn/models/item/end_lamp.json
 37802c31e82d9fcecaf3aebc57df0e02fc5adecc assets/supermodreborn/models/item/lithium_block.json
