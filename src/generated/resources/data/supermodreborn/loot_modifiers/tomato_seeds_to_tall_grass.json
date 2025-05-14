@@ -1,0 +1,14 @@
+{
+  "type": "supermodreborn:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:tall_grass",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.35,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "supermodreborn:tomato_seeds"
+}
