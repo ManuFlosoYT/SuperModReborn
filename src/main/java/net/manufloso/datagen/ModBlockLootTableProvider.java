@@ -146,6 +146,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.HOLLOW_OAK_LOG.get());
         dropSelf(ModBlocks.HOLLOW_STRIPPED_OAK_LOG.get());
         dropSelf(ModBlocks.ENDIUM_BLOCK.get());
+        dropSelf(ModBlocks.PEDESTAL.get());
 
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));

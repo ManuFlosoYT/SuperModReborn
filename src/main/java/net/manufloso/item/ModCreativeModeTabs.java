@@ -150,7 +150,7 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.DECO_56);
                         output.accept(ModBlocks.DECO_57);
                         output.accept(ModBlocks.DECO_58);
-
+                        output.accept(ModBlocks.PEDESTAL.get());
                         output.accept(ModBlocks.HOLLOW_OAK_LOG);
                         output.accept(ModBlocks.HOLLOW_STRIPPED_OAK_LOG);
                     })

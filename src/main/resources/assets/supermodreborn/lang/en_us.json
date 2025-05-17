@@ -90,6 +90,7 @@
   "block.supermodreborn.hollow_oak_log": "Hollow Oak Log",
   "block.supermodreborn.hollow_stripped_oak_log": "Hollow Stripped Oak Log",
   "block.supermodreborn.endium_block": "Endium Block",
+  "block.supermodreborn.pedestal": "Pedestal",
 
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
@@ -123,5 +124,6 @@
   "painting.supermodreborn.random_painting.title": "Random Painting",
   "painting.supermodreborn.random_painting.author": "ManuFloso",
 
-  "enchantment.supermodreborn.lightning_striker": "Lightning Striker"
+  "enchantment.supermodreborn.lightning_striker": "Lightning Striker",
+  "container.supermodreborn.large_chest": "Large Chest"
 }
