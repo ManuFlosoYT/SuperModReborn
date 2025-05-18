@@ -51,7 +51,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.ENDIUM_HOE.get())
         ;
 
-        this.tag(ItemTags.TRIMMABLE_ARMOR)
+        tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ENDIUM_HELMET.get())
                 .add(ModItems.ENDIUM_CHESTPLATE.get())
                 .add(ModItems.ENDIUM_LEGGINGS.get())
@@ -60,13 +60,37 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
 
-        this.tag(ItemTags.LOGS_THAT_BURN)
+        tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALM_LOG.get().asItem())
                 .add(ModBlocks.PALM_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_PALM_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_PALM_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_PALM_WOOD.get().asItem())
+                .add(ModBlocks.HOLLOW_BIRCH_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_BIRCH_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_SPRUCE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_SPRUCE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_ACACIA_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_ACACIA_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_JUNGLE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_JUNGLE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_DARK_OAK_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_DARK_OAK_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_MANGROVE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_MANGROVE_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_CHERRY_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_CHERRY_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_BAMBOO_BLOCK.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_BAMBOO_BLOCK.get().asItem())
+                .add(ModBlocks.HOLLOW_CRIMSON_STEM.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_CRIMSON_STEM.get().asItem())
+                .add(ModBlocks.HOLLOW_WARPED_STEM.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_WARPED_STEM.get().asItem())
+                .add(ModBlocks.HOLLOW_PALM_LOG.get().asItem())
+                .add(ModBlocks.HOLLOW_STRIPPED_PALM_LOG.get().asItem())
+        ;
 
-        this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.PALM_PLANKS.asItem());
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.PALM_PLANKS.asItem())
+        ;
     }
 }

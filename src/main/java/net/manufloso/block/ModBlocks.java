@@ -925,40 +925,80 @@ public class ModBlocks
 
 
     public static final DeferredBlock<Block> HOLLOW_OAK_LOG = registerBlock("hollow_oak_log",
-            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()){
-                @Override
-                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return true;
-                }
-
-                @Override
-                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return 20;
-                }
-
-                @Override
-                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return 5;
-                }
-            });
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
 
     public static final DeferredBlock<Block> HOLLOW_STRIPPED_OAK_LOG = registerBlock("hollow_stripped_oak_log",
-            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()){
-                @Override
-                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return true;
-                }
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
 
-                @Override
-                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return 20;
-                }
+    public static final DeferredBlock<Block> HOLLOW_BIRCH_LOG = registerBlock("hollow_birch_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
 
-                @Override
-                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-                    return 5;
-                }
-            });
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_BIRCH_LOG = registerBlock("hollow_stripped_birch_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_SPRUCE_LOG = registerBlock("hollow_spruce_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_SPRUCE_LOG = registerBlock("hollow_stripped_spruce_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_ACACIA_LOG = registerBlock("hollow_acacia_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_ACACIA_LOG = registerBlock("hollow_stripped_acacia_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_JUNGLE_LOG = registerBlock("hollow_jungle_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_JUNGLE_LOG = registerBlock("hollow_stripped_jungle_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_DARK_OAK_LOG = registerBlock("hollow_dark_oak_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_DARK_OAK_LOG = registerBlock("hollow_stripped_dark_oak_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_MANGROVE_LOG = registerBlock("hollow_mangrove_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_MANGROVE_LOG = registerBlock("hollow_stripped_mangrove_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_CHERRY_LOG = registerBlock("hollow_cherry_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_CHERRY_LOG = registerBlock("hollow_stripped_cherry_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_BAMBOO_BLOCK = registerBlock("hollow_bamboo_block",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_BAMBOO_BLOCK = registerBlock("hollow_stripped_bamboo_block",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_CRIMSON_STEM = registerBlock("hollow_crimson_stem",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_CRIMSON_STEM = registerBlock("hollow_stripped_crimson_stem",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_WARPED_STEM = registerBlock("hollow_warped_stem",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_WARPED_STEM = registerBlock("hollow_stripped_warped_stem",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_PALM_LOG = registerBlock("hollow_palm_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+    public static final DeferredBlock<Block> HOLLOW_STRIPPED_PALM_LOG = registerBlock("hollow_stripped_palm_log",
+            () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
+
+
+
+
 
     public static final DeferredBlock<Block> PEDESTAL = registerBlock("pedestal",
             () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));

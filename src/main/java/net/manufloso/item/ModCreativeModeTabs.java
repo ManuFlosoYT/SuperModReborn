@@ -75,6 +75,30 @@ public class ModCreativeModeTabs
                     .title(Component.translatable("creative_tab.supermodreborn.decoration"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_resources"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.HOLLOW_OAK_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_OAK_LOG);
+                        output.accept(ModBlocks.HOLLOW_BIRCH_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_BIRCH_LOG);
+                        output.accept(ModBlocks.HOLLOW_SPRUCE_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_SPRUCE_LOG);
+                        output.accept(ModBlocks.HOLLOW_ACACIA_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_ACACIA_LOG);
+                        output.accept(ModBlocks.HOLLOW_JUNGLE_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_JUNGLE_LOG);
+                        output.accept(ModBlocks.HOLLOW_DARK_OAK_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_DARK_OAK_LOG);
+                        output.accept(ModBlocks.HOLLOW_MANGROVE_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_MANGROVE_LOG);
+                        output.accept(ModBlocks.HOLLOW_CHERRY_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_CHERRY_LOG);
+                        output.accept(ModBlocks.HOLLOW_BAMBOO_BLOCK);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_BAMBOO_BLOCK);
+                        output.accept(ModBlocks.HOLLOW_CRIMSON_STEM);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_CRIMSON_STEM);
+                        output.accept(ModBlocks.HOLLOW_WARPED_STEM);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_WARPED_STEM);
+                        output.accept(ModBlocks.HOLLOW_PALM_LOG);
+                        output.accept(ModBlocks.HOLLOW_STRIPPED_PALM_LOG);
                         output.accept(ModBlocks.PALM_LOG);
                         output.accept(ModBlocks.STRIPPED_PALM_LOG);
                         output.accept(ModBlocks.PALM_WOOD);
@@ -91,6 +115,7 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.PALM_PRESSURE_PLATE);
                         output.accept(ModBlocks.PALM_SLAB);
                         output.accept(ModBlocks.PALM_STAIRS);
+                        output.accept(ModBlocks.PEDESTAL.get());
                         output.accept(ModBlocks.END_LAMP);
                         output.accept(ModBlocks.DECO_1);
                         output.accept(ModBlocks.DECO_2);
@@ -150,9 +175,6 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.DECO_56);
                         output.accept(ModBlocks.DECO_57);
                         output.accept(ModBlocks.DECO_58);
-                        output.accept(ModBlocks.PEDESTAL.get());
-                        output.accept(ModBlocks.HOLLOW_OAK_LOG);
-                        output.accept(ModBlocks.HOLLOW_STRIPPED_OAK_LOG);
                     })
                     .build());
 

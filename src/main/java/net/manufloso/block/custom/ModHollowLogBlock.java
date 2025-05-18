@@ -47,7 +47,7 @@ public class ModHollowLogBlock extends RotatedPillarBlock {
 
     @Override
     public int getFlammability( @NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
-        return 5;
+        return 20;
     }
 
     @Override
@@ -76,6 +76,39 @@ public class ModHollowLogBlock extends RotatedPillarBlock {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
             if(state.is(ModBlocks.HOLLOW_OAK_LOG)) {
                 return ModBlocks.HOLLOW_STRIPPED_OAK_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_BIRCH_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_BIRCH_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_SPRUCE_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_SPRUCE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_JUNGLE_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_JUNGLE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_ACACIA_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_ACACIA_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_MANGROVE_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_MANGROVE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_DARK_OAK_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_DARK_OAK_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_CHERRY_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_CHERRY_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_BAMBOO_BLOCK)) {
+                return ModBlocks.HOLLOW_STRIPPED_BAMBOO_BLOCK.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_CRIMSON_STEM)) {
+                return ModBlocks.HOLLOW_STRIPPED_CRIMSON_STEM.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_WARPED_STEM)) {
+                return ModBlocks.HOLLOW_STRIPPED_WARPED_STEM.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            else if(state.is(ModBlocks.HOLLOW_PALM_LOG)) {
+                return ModBlocks.HOLLOW_STRIPPED_PALM_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
 
