@@ -134,6 +134,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.PALM_SAPLING);
 
         blockWithItem(ModBlocks.ENDIUM_BLOCK);
+        blockWithItem(ModBlocks.BURNT_NETHER_BRICKS);
+        blockWithItem(ModBlocks.CHISELED_ENDSTONE_BRICKS);
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

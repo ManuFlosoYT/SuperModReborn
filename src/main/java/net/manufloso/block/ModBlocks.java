@@ -14,6 +14,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -156,7 +158,7 @@ public class ModBlocks
                 }
             });
     public static final DeferredBlock<Block> PALM_LEAVES = registerBlock("palm_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_LEAVES)) {
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JUNGLE_LEAVES).mapColor(MapColor.PLANT).strength(0.2F).randomTicks().noOcclusion()){
                 @Override
                 public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
                     return true;
@@ -997,6 +999,22 @@ public class ModBlocks
             () -> new ModHollowLogBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOD).noOcclusion()));
 
 
+
+    public static final DeferredBlock<Block> BURNT_NETHER_BRICKS = registerBlock(
+            "burnt_nether_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.NETHER_BRICKS)
+            ));
+
+    public static final DeferredBlock<Block> CHISELED_ENDSTONE_BRICKS = registerBlock(
+            "chiseled_endstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .explosionResistance(15f)
+                    .sound(SoundType.STONE)
+            ));
 
 
 

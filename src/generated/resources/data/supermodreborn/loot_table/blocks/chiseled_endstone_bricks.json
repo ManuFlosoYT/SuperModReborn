@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "supermodreborn:hollow_stripped_bamboo_log"
+          "name": "supermodreborn:chiseled_endstone_bricks"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "supermodreborn:blocks/hollow_stripped_bamboo_log"
+  "random_sequence": "supermodreborn:blocks/chiseled_endstone_bricks"
 }

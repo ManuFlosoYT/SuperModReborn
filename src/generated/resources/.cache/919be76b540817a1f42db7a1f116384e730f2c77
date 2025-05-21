@@ -1,4 +1,6 @@
-// 1.21.1	2025-05-19T00:31:20.8485816	Block States: supermodreborn
+// 1.21.1	2025-05-21T12:51:46.1822183	Block States: supermodreborn
+ceea7302f9fc64070eae3ae033049e8a74fcd24b assets/supermodreborn/blockstates/burnt_nether_bricks.json
+01130bb4cdaeb91da475eb6f1988aad9d28bacee assets/supermodreborn/blockstates/chiseled_endstone_bricks.json
 8a11a6500c07e656951e247b24f312019903c641 assets/supermodreborn/blockstates/chunk_loader.json
 bc6aa37d361746968d58447b7fab25ffb54376c9 assets/supermodreborn/blockstates/deco_1.json
 59a7081011ab8c77fe346586cdc9189d8b10c8aa assets/supermodreborn/blockstates/deco_10.json
@@ -81,6 +83,8 @@ eac61e9297e5978db65af0c2494d83960a164ebc assets/supermodreborn/blockstates/palm_
 acd769c99c3f385cc2d222b38195feb44ad21a62 assets/supermodreborn/blockstates/stripped_palm_log.json
 749f042c110359475be763e5c0f1b42901ac174c assets/supermodreborn/blockstates/stripped_palm_wood.json
 ced611900bd16cca72ba9d972df31769811eedf2 assets/supermodreborn/blockstates/tomato_crop.json
+bc3a3a81d7e8df97b09e09b207cb9d6a64752de1 assets/supermodreborn/models/block/burnt_nether_bricks.json
+b890e566f2df77ba2d4a0544b7a9778aedae4752 assets/supermodreborn/models/block/chiseled_endstone_bricks.json
 581896d1753cc66a2c35af0d7c3d188f2d6e8f9d assets/supermodreborn/models/block/chunk_loader.json
 4f8ca4daeaa5e718f72f990fdb4a8faa77b4c793 assets/supermodreborn/models/block/deco_1.json
 9a94a9f39db821b4bf20947a75da3c31a36e4012 assets/supermodreborn/models/block/deco_10.json
@@ -190,6 +194,8 @@ a562d2153c0690c2a540d3c898675d5e15fac167 assets/supermodreborn/models/block/stri
 289d4bda732ebaed96a395a3a4d7eb087e9e1687 assets/supermodreborn/models/block/tomato_crop_stage0.json
 5c079ccdc94e747883b5b4d844639c6e1a43ca34 assets/supermodreborn/models/block/tomato_crop_stage1.json
 10ff505f00eb46cdeb989621dc4d8f1e20e3b98b assets/supermodreborn/models/block/tomato_crop_stage2.json
+8dc6bb962de94853b5376c8f5b87de0c2159a134 assets/supermodreborn/models/item/burnt_nether_bricks.json
+a8d9e23fcc4ae9740a20f4094d669277ca51d4c9 assets/supermodreborn/models/item/chiseled_endstone_bricks.json
 2ce119b368563b7c756440f56177a1caf0c5e3dd assets/supermodreborn/models/item/chunk_loader.json
 df7192f264cfb25b4cddd0237da528813b87a449 assets/supermodreborn/models/item/deco_1.json
 80d7b1304c05c6f0555e0ee4cc3e3ac63aaa576e assets/supermodreborn/models/item/deco_10.json

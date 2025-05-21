@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "supermodreborn:hollow_crimson_log"
+          "name": "supermodreborn:hollow_stripped_warped_stem"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "supermodreborn:blocks/hollow_crimson_log"
+  "random_sequence": "supermodreborn:blocks/hollow_stripped_warped_stem"
 }

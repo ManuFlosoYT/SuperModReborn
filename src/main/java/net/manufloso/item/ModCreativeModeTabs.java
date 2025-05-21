@@ -71,7 +71,7 @@ public class ModCreativeModeTabs
 
     public static final Supplier<CreativeModeTab> CREATIVE_TAB_DECORATION = CREATIVE_MODE_TAB.register("creative_tab_decoration",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Items.DIRT))
+                    .icon(() -> new ItemStack(ModBlocks.HOLLOW_OAK_LOG))
                     .title(Component.translatable("creative_tab.supermodreborn.decoration"))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_resources"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -116,6 +116,8 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.PALM_SLAB);
                         output.accept(ModBlocks.PALM_STAIRS);
                         output.accept(ModBlocks.PEDESTAL.get());
+                        output.accept(ModBlocks.BURNT_NETHER_BRICKS);
+                        output.accept(ModBlocks.CHISELED_ENDSTONE_BRICKS);
                         output.accept(ModBlocks.END_LAMP);
                         output.accept(ModBlocks.DECO_1);
                         output.accept(ModBlocks.DECO_2);
