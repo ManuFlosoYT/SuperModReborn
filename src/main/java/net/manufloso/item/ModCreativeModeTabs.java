@@ -115,9 +115,12 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.PALM_PRESSURE_PLATE);
                         output.accept(ModBlocks.PALM_SLAB);
                         output.accept(ModBlocks.PALM_STAIRS);
+                        output.accept(ModBlocks.SHRUB);
                         output.accept(ModBlocks.PEDESTAL.get());
                         output.accept(ModBlocks.BURNT_NETHER_BRICKS);
                         output.accept(ModBlocks.CHISELED_ENDSTONE_BRICKS);
+                        output.accept(ModBlocks.CRACKED_ENDSTONE);
+                        output.accept(ModBlocks.INFUSED_ENDSTONE_BRICKS);
                         output.accept(ModBlocks.END_LAMP);
                         output.accept(ModBlocks.DECO_1);
                         output.accept(ModBlocks.DECO_2);

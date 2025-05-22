@@ -56,7 +56,7 @@ public class ModHollowLogBlock extends RotatedPillarBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         Direction.Axis axis = state.getValue(RotatedPillarBlock.AXIS);
         return switch (axis) {
             case X -> SHAPE_X;

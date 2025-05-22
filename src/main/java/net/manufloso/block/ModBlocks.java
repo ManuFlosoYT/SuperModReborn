@@ -1021,6 +1021,15 @@ public class ModBlocks
     public static final DeferredBlock<Block> PEDESTAL = registerBlock("pedestal",
             () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
+    public static final DeferredBlock<Block> SHRUB = registerBlock("shrub",
+            () -> new ShrubBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.AZALEA)));
+
+    public static final DeferredBlock<Block> CRACKED_ENDSTONE = registerBlock("cracked_endstone",
+            () -> new CrackedEndstone(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)));
+
+    public static final DeferredBlock<Block> INFUSED_ENDSTONE_BRICKS = registerBlock("infused_endstone_bricks",
+            () -> new InfusedEndstoneBricks(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

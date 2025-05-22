@@ -169,8 +169,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.HOLLOW_STRIPPED_PALM_LOG.get());
         dropSelf(ModBlocks.CHISELED_ENDSTONE_BRICKS.get());
         dropSelf(ModBlocks.BURNT_NETHER_BRICKS.get());
-
-
+        dropSelf(ModBlocks.SHRUB.get());
+        dropSelf(ModBlocks.CRACKED_ENDSTONE.get());
+        dropSelf(ModBlocks.INFUSED_ENDSTONE_BRICKS.get());
 
 
 
