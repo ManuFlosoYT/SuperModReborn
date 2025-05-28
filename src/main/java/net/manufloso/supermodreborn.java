@@ -11,6 +11,10 @@ import net.manufloso.loot.ModLootModifiers;
 import net.manufloso.screen.ModMenuTypes;
 import net.manufloso.screen.custom.PedestalScreen;
 import net.manufloso.sound.ModSounds;
+import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -54,6 +58,24 @@ public class supermodreborn
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
+        }
+
+        @SubscribeEvent
+        public static void registerBlockColors(RegisterColorHandlersEvent.Block event) {
+            event.getBlockColors().register((blockState, tintableBlockAccess, blockPos, tintIndex) -> {
+                if (tintableBlockAccess != null && blockPos != null) {
+                    return BiomeColors.getAverageFoliageColor(tintableBlockAccess, blockPos);
+                }
+                return FoliageColor.getDefaultColor();
+            }, ModBlocks.PALM_LEAVES.get());
+        }
+
+        @SubscribeEvent
+        public static void registerItemColorHandlers(RegisterColorHandlersEvent.Item event) {
+            event.getItemColors().register((itemStack, tintIndex) -> {
+                BlockState blockState = ((BlockItem) itemStack.getItem()).getBlock().defaultBlockState();
+                return event.getBlockColors().getColor(blockState, null, null, tintIndex);
+            }, ModBlocks.PALM_LEAVES.get().asItem());
         }
     }
 }
