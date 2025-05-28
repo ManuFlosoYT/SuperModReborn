@@ -36,6 +36,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.ENDIUM_CHESTPLATE);
                         output.accept(ModItems.ENDIUM_LEGGINGS);
                         output.accept(ModItems.ENDIUM_BOOTS);
+                        output.accept(ModItems.BACKPACK);
                     })
                     .build());
 

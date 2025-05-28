@@ -1,5 +1,6 @@
 package net.manufloso.screen;
 
+import net.manufloso.screen.custom.BackpackMenu;
 import net.manufloso.screen.custom.PedestalMenu;
 import net.manufloso.supermodreborn;
 import net.minecraft.core.registries.Registries;
@@ -17,6 +18,9 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<PedestalMenu>> PEDESTAL_MENU =
             registerMenuType("pedestal_menu", PedestalMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<BackpackMenu>> BACKPACK_MENU =
+            registerMenuType("backpack_menu", BackpackMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

@@ -89,6 +89,9 @@ public class ModItems
     public static final DeferredItem<Item> ENDIUM_SCRAP = ITEMS.register("endium_scrap",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> BACKPACK = ITEMS.register("backpack",
+            () -> new BackpackItem(new Item.Properties().stacksTo(1)));
+
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));
 

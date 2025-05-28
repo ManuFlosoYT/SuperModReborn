@@ -151,5 +151,8 @@
   "painting.supermodreborn.random_painting.author": "ManuFloso",
 
   "enchantment.supermodreborn.lightning_striker": "Lightning Striker",
-  "container.supermodreborn.large_chest": "Large Chest"
+  "container.supermodreborn.large_chest": "Large Chest",
+
+  "item.supermodreborn.backpack": "Backpack",
+  "container.supermodreborn.backpack": "Backpack"
 }

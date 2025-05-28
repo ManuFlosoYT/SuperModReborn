@@ -9,6 +9,7 @@ import net.manufloso.item.ModCreativeModeTabs;
 import net.manufloso.item.ModItems;
 import net.manufloso.loot.ModLootModifiers;
 import net.manufloso.screen.ModMenuTypes;
+import net.manufloso.screen.custom.BackpackScreen;
 import net.manufloso.screen.custom.PedestalScreen;
 import net.manufloso.sound.ModSounds;
 import net.minecraft.client.renderer.BiomeColors;
@@ -58,6 +59,7 @@ public class supermodreborn
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
+            event.register(ModMenuTypes.BACKPACK_MENU.get(), BackpackScreen::new);
         }
 
         @SubscribeEvent
