@@ -14,28 +14,23 @@ public class BackpackScreen extends AbstractContainerScreen<BackpackMenu> {
 
     public BackpackScreen(BackpackMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        // Ajustar el tamaño de la imagen y el espacio para las etiquetas si es necesario
-        this.imageWidth = 176;
-        this.imageHeight = 256; // Altura de tu textura backpack_gui.png
-        this.inventoryLabelY = this.imageHeight - 94; // Posición Y para "Inventario"
+        //imageWidth = 256;
+        imageHeight = 235;
     }
 
     @Override
     protected void renderBg(@NotNull GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
-        int x = (this.width - this.imageWidth) / 2;
-        int y = (this.height - this.imageHeight) / 2;
-        guiGraphics.blit(GUI_TEXTURE, x, y, 0, 0, this.imageWidth, this.imageHeight);
+        int x = (width - imageWidth) / 2;
+        int y = (height - imageHeight) / 2;
+        guiGraphics.blit(GUI_TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
     }
 
     @Override
     public void render(@NotNull GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTick) {
         super.render(guiGraphics, mouseX, mouseY, partialTick);
-        this.renderTooltip(guiGraphics, mouseX, mouseY); // Dibuja tooltips si el cursor está sobre un ítem
+        this.renderTooltip(guiGraphics, mouseX, mouseY);
     }
 
     @Override
-    protected void renderLabels(@NotNull GuiGraphics guiGraphics, int mouseX, int mouseY) {
-        // Título del inventario del jugador (p.ej. "Inventario")
-        guiGraphics.drawString(this.font, this.playerInventoryTitle, this.inventoryLabelX, this.inventoryLabelY, 0x404040, false);
-    }
+    protected void renderLabels(@NotNull GuiGraphics guiGraphics, int mouseX, int mouseY) {}
 }
