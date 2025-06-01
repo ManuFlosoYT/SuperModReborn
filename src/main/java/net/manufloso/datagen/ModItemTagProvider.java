@@ -37,6 +37,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.PICKAXES)
                 .add(ModItems.ENDIUM_PICKAXE.get())
+                .add(ModItems.ENDIUM_HAMMER.get())
+                .add(ModItems.NETHERITE_HAMMER.get())
+                .add(ModItems.DIAMOND_HAMMER.get())
+                .add(ModItems.IRON_HAMMER.get())
         ;
 
         tag(ItemTags.AXES)

@@ -1,5 +1,6 @@
 {
   "itemGroup.supermodreborn": "SuperMod Reborn",
+
   "creative_tab.supermodreborn.equipment": "Supermod Reborn: Equipment",
   "creative_tab.supermodreborn.food": "Supermod Reborn: Food",
   "creative_tab.supermodreborn.resources": "Supermod Reborn: Resources",
@@ -118,11 +119,11 @@
   "block.supermodreborn.shrub": "Shrub",
   "block.supermodreborn.cracked_endstone": "Cracked Endstone",
   "block.supermodreborn.infused_endstone_bricks": "Infused Endstone Bricks",
+
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
   "item.supermodreborn.launcher": "Launcher",
   "item.supermodreborn.cheese": "Cheese",
-  "item.supermodreborn.teleport_link": "Teleport Link",
   "item.supermodreborn.endium_sword": "Endium Sword",
   "item.supermodreborn.endium_pickaxe": "Endium Pickaxe",
   "item.supermodreborn.endium_axe": "Endium Axe",
@@ -137,10 +138,17 @@
   "item.supermodreborn.tomato": "Tomato",
   "item.supermodreborn.tomato_seeds": "Tomato Seeds",
   "item.supermodreborn.endium_scrap": "Endium Scrap",
+  "item.supermodreborn.backpack": "Backpack",
+  "item.supermodreborn.netherite_hammer": "Netherite Hammer",
+  "item.supermodreborn.diamond_hammer": "Diamond Hammer",
+  "item.supermodreborn.iron_hammer": "Iron Hammer",
+  "item.supermodreborn.large_endium_shovel": "Large Endium Shovel",
+  "item.supermodreborn.large_netherite_shovel": "Large Netherite Shovel",
+  "item.supermodreborn.large_diamond_shovel": "Large Diamond Shovel",
+  "item.supermodreborn.large_iron_shovel": "Large Iron Shovel",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
-  "tooltip.supermodreborn.teleport_link": "Right click on a block to save the location \nShift Right Click to erase saved data",
 
   "sounds.supermodreborn.beep": "Beep",
   "sounds.supermodreborn.transaction": "Transaction",
@@ -151,8 +159,7 @@
   "painting.supermodreborn.random_painting.author": "ManuFloso",
 
   "enchantment.supermodreborn.lightning_striker": "Lightning Striker",
-  "container.supermodreborn.large_chest": "Large Chest",
 
-  "item.supermodreborn.backpack": "Backpack",
+  "container.supermodreborn.large_chest": "Large Chest",
   "container.supermodreborn.backpack": "Backpack"
 }

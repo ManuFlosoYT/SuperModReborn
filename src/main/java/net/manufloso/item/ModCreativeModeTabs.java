@@ -24,19 +24,25 @@ public class ModCreativeModeTabs
                     .icon(() -> new ItemStack(ModItems.ENDIUM_HAMMER.get()))
                     .title(Component.translatable("creative_tab.supermodreborn.equipment"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.LAUNCHER);
-                        output.accept(ModItems.TELEPORT_LINK);
                         output.accept(ModItems.ENDIUM_SWORD);
                         output.accept(ModItems.ENDIUM_PICKAXE);
                         output.accept(ModItems.ENDIUM_AXE);
                         output.accept(ModItems.ENDIUM_SHOVEL);
                         output.accept(ModItems.ENDIUM_HOE);
-                        output.accept(ModItems.ENDIUM_HAMMER);
                         output.accept(ModItems.ENDIUM_HELMET);
                         output.accept(ModItems.ENDIUM_CHESTPLATE);
                         output.accept(ModItems.ENDIUM_LEGGINGS);
                         output.accept(ModItems.ENDIUM_BOOTS);
                         output.accept(ModItems.BACKPACK);
+                        output.accept(ModItems.ENDIUM_HAMMER);
+                        output.accept(ModItems.NETHERITE_HAMMER);
+                        output.accept(ModItems.DIAMOND_HAMMER);
+                        output.accept(ModItems.IRON_HAMMER);
+                        output.accept(ModItems.LARGE_ENDIUM_SHOVEL);
+                        output.accept(ModItems.LARGE_NETHERITE_SHOVEL);
+                        output.accept(ModItems.LARGE_DIAMOND_SHOVEL);
+                        output.accept(ModItems.LARGE_IRON_SHOVEL);
+                        output.accept(ModItems.LAUNCHER);
                     })
                     .build());
 

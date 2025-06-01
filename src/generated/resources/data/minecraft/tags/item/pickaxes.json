@@ -1,5 +1,9 @@
 {
   "values": [
-    "supermodreborn:endium_pickaxe"
+    "supermodreborn:endium_pickaxe",
+    "supermodreborn:endium_hammer",
+    "supermodreborn:netherite_hammer",
+    "supermodreborn:diamond_hammer",
+    "supermodreborn:iron_hammer"
   ]
 }

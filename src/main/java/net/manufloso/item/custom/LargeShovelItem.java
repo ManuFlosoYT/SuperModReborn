@@ -13,9 +13,9 @@ import net.minecraft.world.phys.HitResult;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HammerItem extends DiggerItem {
-    public HammerItem(Tier tier, Properties properties) {
-        super(tier, BlockTags.MINEABLE_WITH_PICKAXE, properties);
+public class LargeShovelItem extends DiggerItem {
+    public LargeShovelItem(Tier tier, Properties properties) {
+        super(tier, BlockTags.MINEABLE_WITH_SHOVEL, properties);
     }
 
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initalBlockPos, ServerPlayer player) {

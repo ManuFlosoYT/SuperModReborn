@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-19T00:31:20.8455721	Item Models: supermodreborn
+// 1.21.1	2025-06-02T00:11:11.7024105	Item Models: supermodreborn
 8fac8a62f3293b9e7bec2e0da24faffd4bfc919d assets/supermodreborn/models/item/cheese.json
 6ef4cfdc0fb3db4483a394f59607c4b4fbaf4232 assets/supermodreborn/models/item/endium_axe.json
 4bd423d09e5ffee256ba778862a574038317a217 assets/supermodreborn/models/item/endium_boots.json
@@ -59,6 +59,5 @@ e616e081b3b7d34043f1b12542ccefd918d65e50 assets/supermodreborn/models/item/palm_
 edccc3c372b578db9f20ba0332a62b96a5b708b7 assets/supermodreborn/models/item/palm_sapling.json
 1b826387e04ac724fdfda499d3b3c4bb979db17d assets/supermodreborn/models/item/palm_wall.json
 873cb89e91ca1e2fc2210c3f2da22e0d8bf56da1 assets/supermodreborn/models/item/raw_lithium.json
-bb7dd3b82fe4775bcb96f0ef71e16f4dba2be44b assets/supermodreborn/models/item/teleport_link.json
 fd296b26ba412a8d74c51c1f586f5e3703d05c61 assets/supermodreborn/models/item/tomato.json
 ee5f73afbd64515fc60404437702b74dacfdc21e assets/supermodreborn/models/item/tomato_seeds.json

@@ -33,13 +33,6 @@ public class ModItems
             )
     );
 
-    public static final DeferredItem<Item> TELEPORT_LINK = ITEMS.register("teleport_link",
-            () -> new TeleportLinkItem(new Item.Properties()
-                    .stacksTo(1)
-                    .rarity(Rarity.RARE)
-            )
-    );
-
     public static final DeferredItem<Item> ENDIUM_INGOT = ITEMS.register("endium_ingot",
             () -> new Item(new Item.Properties()));
 
@@ -61,7 +54,29 @@ public class ModItems
 
     public static final DeferredItem<HammerItem> ENDIUM_HAMMER = ITEMS.register("endium_hammer",
             () -> new HammerItem(ModToolTiers.ENDIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 4F, -3.5f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 20F, -3.5f))));
+    public static final DeferredItem<HammerItem> NETHERITE_HAMMER = ITEMS.register("netherite_hammer",
+            () -> new HammerItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.NETHERITE, 8F, -3.5f))));
+    public static final DeferredItem<HammerItem> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
+            () -> new HammerItem(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, 6F, -3.5f))));
+    public static final DeferredItem<HammerItem> IRON_HAMMER = ITEMS.register("iron_hammer",
+            () -> new HammerItem(Tiers.IRON, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.IRON, 4F, -3.5f))));
+
+    public static final DeferredItem<LargeShovelItem> LARGE_ENDIUM_SHOVEL = ITEMS.register("large_endium_shovel",
+            () -> new LargeShovelItem(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 20F, -3.5f))));
+    public static final DeferredItem<LargeShovelItem> LARGE_NETHERITE_SHOVEL = ITEMS.register("large_netherite_shovel",
+            () -> new LargeShovelItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.NETHERITE, 8F, -3.5f))));
+    public static final DeferredItem<LargeShovelItem> LARGE_DIAMOND_SHOVEL = ITEMS.register("large_diamond_shovel",
+            () -> new LargeShovelItem(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, 6F, -3.5f))));
+    public static final DeferredItem<LargeShovelItem> LARGE_IRON_SHOVEL = ITEMS.register("large_iron_shovel",
+            () -> new LargeShovelItem(Tiers.IRON, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.IRON, 4F, -3.5f))));
 
 
     public static final DeferredItem<ArmorItem> ENDIUM_HELMET = ITEMS.register("endium_helmet",
