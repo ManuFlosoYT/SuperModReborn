@@ -70,6 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.PALM_SAPLING);
         basicItem(ModItems.ENDIUM_SCRAP.get());
+        basicItem(ModItems.TORCHER.get());
+        basicItem(ModItems.SLINGSHOT.get());
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

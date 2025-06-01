@@ -107,6 +107,11 @@ public class ModItems
     public static final DeferredItem<Item> BACKPACK = ITEMS.register("backpack",
             () -> new BackpackItem(new Item.Properties().stacksTo(1)));
 
+    public static final DeferredItem<Item> SLINGSHOT = ITEMS.register("slingshot",
+            () -> new SlingshotItem(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> TORCHER = ITEMS.register("torcher",
+            () -> new TorcherItem(new Item.Properties().stacksTo(1)));
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));
 

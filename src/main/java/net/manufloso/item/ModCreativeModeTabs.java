@@ -43,6 +43,8 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.LARGE_DIAMOND_SHOVEL);
                         output.accept(ModItems.LARGE_IRON_SHOVEL);
                         output.accept(ModItems.LAUNCHER);
+                        output.accept(ModItems.SLINGSHOT);
+                        output.accept(ModItems.TORCHER);
                     })
                     .build());
 

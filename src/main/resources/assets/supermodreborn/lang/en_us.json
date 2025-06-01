@@ -146,9 +146,12 @@
   "item.supermodreborn.large_netherite_shovel": "Large Netherite Shovel",
   "item.supermodreborn.large_diamond_shovel": "Large Diamond Shovel",
   "item.supermodreborn.large_iron_shovel": "Large Iron Shovel",
+  "item.supermodreborn.slingshot": "Slingshot",
+  "item.supermodreborn.torcher": "Torcher",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
+  "tooltip.supermodreborn.torcher.description": "Hold Shift while in hand to place a torch at your feet in dark areas.",
 
   "sounds.supermodreborn.beep": "Beep",
   "sounds.supermodreborn.transaction": "Transaction",
