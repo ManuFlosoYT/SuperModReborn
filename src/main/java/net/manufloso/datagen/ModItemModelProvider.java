@@ -75,6 +75,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.SLIME_BOOTS.getId().getPath(), mcLoc("item/generated"))
                 .texture("layer0", modLoc("item/" + ModItems.SLIME_BOOTS.getId().getPath()));
+
+        basicItem(ModItems.BRONZE_MINECOIN.get());
+        basicItem(ModItems.SILVER_MINECOIN.get());
+        basicItem(ModItems.GOLD_MINECOIN.get());
+        basicItem(ModItems.PLATINUM_MINECOIN.get());
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

@@ -120,8 +120,14 @@ public class ModItems
             () -> new SlimeBootsItem(ModArmorMaterials.SLIME_BOOT_MATERIAL,
                     new Item.Properties().stacksTo(1)));
 
-    //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
-    //        () -> new FuelItem(new Item.Properties(), 800));
+    public static final DeferredItem<Item> PLATINUM_MINECOIN = ITEMS.register("platinum_minecoin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GOLD_MINECOIN = ITEMS.register("gold_minecoin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_MINECOIN = ITEMS.register("silver_minecoin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRONZE_MINECOIN = ITEMS.register("bronze_minecoin",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus)
     {

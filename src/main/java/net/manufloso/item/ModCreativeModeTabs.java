@@ -202,6 +202,10 @@ public class ModCreativeModeTabs
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "creative_tab_decoration"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.CHUNK_LOADER);
+                        output.accept(ModItems.BRONZE_MINECOIN);
+                        output.accept(ModItems.SILVER_MINECOIN);
+                        output.accept(ModItems.GOLD_MINECOIN);
+                        output.accept(ModItems.PLATINUM_MINECOIN);
                     })
                     .build());
 
