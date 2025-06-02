@@ -44,6 +44,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.LARGE_IRON_SHOVEL);
                         output.accept(ModItems.LAUNCHER);
                         output.accept(ModItems.SLINGSHOT);
+                        output.accept(ModItems.SLIME_BOOTS);
                         output.accept(ModItems.TORCHER);
                         output.accept(ModItems.BEDROCK_BREAKER);
                     })

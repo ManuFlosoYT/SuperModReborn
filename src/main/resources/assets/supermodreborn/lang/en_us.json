@@ -150,12 +150,16 @@
   "item.supermodreborn.slingshot": "Slingshot",
   "item.supermodreborn.torcher": "Torcher",
   "item.supermodreborn.bedrock_breaker": "Bedrock Breaker",
+  "item.supermodreborn.slime_boots": "Slime Boots",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
   "tooltip.supermodreborn.torcher.description": "Hold Shift while in hand to place a torch at your feet in dark areas.",
   "tooltip.supermodreborn.bedrock_breaker.description_line1": "A single-use tool of immense power.",
   "tooltip.supermodreborn.bedrock_breaker.description_line2": "Right-click on Bedrock to break it, at a great cost.",
+  "tooltip.supermodreborn.slime_boots.description": "Boing! Negates fall damage.",
+  "tooltip.supermodreborn.slime_boots.effect": "Rebounds on impact if not sneaking.",
+
 
   "sounds.supermodreborn.beep": "Beep",
   "sounds.supermodreborn.transaction": "Transaction",

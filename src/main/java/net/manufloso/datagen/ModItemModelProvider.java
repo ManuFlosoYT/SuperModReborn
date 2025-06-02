@@ -72,6 +72,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ENDIUM_SCRAP.get());
         basicItem(ModItems.TORCHER.get());
         basicItem(ModItems.SLINGSHOT.get());
+
+        withExistingParent(ModItems.SLIME_BOOTS.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0", modLoc("item/" + ModItems.SLIME_BOOTS.getId().getPath()));
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

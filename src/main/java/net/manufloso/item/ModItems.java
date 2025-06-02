@@ -116,6 +116,9 @@ public class ModItems
     public static final DeferredItem<Item> BEDROCK_BREAKER = ITEMS.register("bedrock_breaker",
             () -> new BedrockBreakerItem(new Item.Properties().rarity(Rarity.EPIC)));
 
+    public static final DeferredItem<ArmorItem> SLIME_BOOTS = ITEMS.register("slime_boots",
+            () -> new SlimeBootsItem(ModArmorMaterials.SLIME_BOOT_MATERIAL,
+                    new Item.Properties().stacksTo(1)));
 
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));

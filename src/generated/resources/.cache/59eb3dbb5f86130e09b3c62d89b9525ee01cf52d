@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-22T11:47:36.7462851	Loot Tables
+// 1.21.1	2025-06-02T15:21:43.984951	Loot Tables
 11b24a4f5bc952e1c645633f2422d100688d52f9 data/supermodreborn/loot_table/blocks/burnt_nether_bricks.json
 0ed145232540bf3a3d255be6b56cb0caacef6b83 data/supermodreborn/loot_table/blocks/chiseled_endstone_bricks.json
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
@@ -65,6 +65,7 @@ a8a71568526dd0ffec94a30f72ac1d4a04b19425 data/supermodreborn/loot_table/blocks/d
 a4ef3a0a6d5de15f13cc3d2a34f3c47d555eac3c data/supermodreborn/loot_table/blocks/endium_block.json
 3f834c5f8969ef117ee22743f93aa64ab93dcdd7 data/supermodreborn/loot_table/blocks/endium_ore.json
 99189eda4e27eda70176f583f59c4262964712e0 data/supermodreborn/loot_table/blocks/end_lamp.json
+97d626614893c50cc329e20ec464e5c43a5d51f5 data/supermodreborn/loot_table/blocks/graddle.json
 14f5786f5702612ee370f5d8d34767908eb25c6c data/supermodreborn/loot_table/blocks/hollow_acacia_log.json
 84ddbdc23481ba2320c9554a2c2d06c2bdb6aa7f data/supermodreborn/loot_table/blocks/hollow_bamboo_block.json
 81c2050c14a91036dae5d55bc620be46daa34790 data/supermodreborn/loot_table/blocks/hollow_birch_log.json
