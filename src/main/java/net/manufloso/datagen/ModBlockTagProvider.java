@@ -87,7 +87,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DECO_56.get())
                 .add(ModBlocks.DECO_57.get())
                 .add(ModBlocks.DECO_58.get())
-
+                .add(ModBlocks.GRADDLE.get())
         ;
 
         tag(BlockTags.MINEABLE_WITH_AXE)
@@ -107,7 +107,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LITHIUM_BLOCK.get())
                 .add(ModBlocks.LITHIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get())
-
+                .add(ModBlocks.GRADDLE.get())
                 .add(ModBlocks.CHUNK_LOADER.get())
         ;
 

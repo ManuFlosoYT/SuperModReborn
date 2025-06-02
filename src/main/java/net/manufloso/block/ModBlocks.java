@@ -1030,6 +1030,15 @@ public class ModBlocks
     public static final DeferredBlock<Block> INFUSED_ENDSTONE_BRICKS = registerBlock("infused_endstone_bricks",
             () -> new InfusedEndstoneBricks(BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)));
 
+    public static final DeferredBlock<Block> GRADDLE = registerBlock("graddle",
+            () -> new GraddleBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.METAL)
+                    .strength(5.0F, 6.0F) // Dureza y resistencia del hierro
+                    .sound(SoundType.METAL) // Sonidos metálicos
+                    .requiresCorrectToolForDrops()
+                    .noOcclusion() // Si tu modelo no ocupa todo el bloque
+            ));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

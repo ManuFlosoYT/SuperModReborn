@@ -105,13 +105,18 @@ public class ModItems
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> BACKPACK = ITEMS.register("backpack",
-            () -> new BackpackItem(new Item.Properties().stacksTo(1)));
+            () -> new BackpackItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).fireResistant()));
 
     public static final DeferredItem<Item> SLINGSHOT = ITEMS.register("slingshot",
-            () -> new SlingshotItem(new Item.Properties().stacksTo(1)));
+            () -> new SlingshotItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
     public static final DeferredItem<Item> TORCHER = ITEMS.register("torcher",
-            () -> new TorcherItem(new Item.Properties().stacksTo(1)));
+            () -> new TorcherItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+
+    public static final DeferredItem<Item> BEDROCK_BREAKER = ITEMS.register("bedrock_breaker",
+            () -> new BedrockBreakerItem(new Item.Properties().rarity(Rarity.EPIC)));
+
+
     //public static final DeferredItem<Item> FUEL_ITEM = ITEMS.register("fuel_item",
     //        () -> new FuelItem(new Item.Properties(), 800));
 

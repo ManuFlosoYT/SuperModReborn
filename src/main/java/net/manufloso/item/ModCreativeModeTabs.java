@@ -45,6 +45,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.LAUNCHER);
                         output.accept(ModItems.SLINGSHOT);
                         output.accept(ModItems.TORCHER);
+                        output.accept(ModItems.BEDROCK_BREAKER);
                     })
                     .build());
 
@@ -189,6 +190,7 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.DECO_56);
                         output.accept(ModBlocks.DECO_57);
                         output.accept(ModBlocks.DECO_58);
+                        output.accept(ModBlocks.GRADDLE);
                     })
                     .build());
 

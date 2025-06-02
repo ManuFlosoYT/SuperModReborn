@@ -119,6 +119,7 @@
   "block.supermodreborn.shrub": "Shrub",
   "block.supermodreborn.cracked_endstone": "Cracked Endstone",
   "block.supermodreborn.infused_endstone_bricks": "Infused Endstone Bricks",
+  "block.supermodreborn.graddle": "Graddle",
 
   "item.supermodreborn.lithium_ingot": "Lithium Ingot",
   "item.supermodreborn.raw_lithium": "Raw Lithium",
@@ -148,10 +149,13 @@
   "item.supermodreborn.large_iron_shovel": "Large Iron Shovel",
   "item.supermodreborn.slingshot": "Slingshot",
   "item.supermodreborn.torcher": "Torcher",
+  "item.supermodreborn.bedrock_breaker": "Bedrock Breaker",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
   "tooltip.supermodreborn.torcher.description": "Hold Shift while in hand to place a torch at your feet in dark areas.",
+  "tooltip.supermodreborn.bedrock_breaker.description_line1": "A single-use tool of immense power.",
+  "tooltip.supermodreborn.bedrock_breaker.description_line2": "Right-click on Bedrock to break it, at a great cost.",
 
   "sounds.supermodreborn.beep": "Beep",
   "sounds.supermodreborn.transaction": "Transaction",
