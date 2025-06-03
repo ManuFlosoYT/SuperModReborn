@@ -11,6 +11,18 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class ModCommands {
 
+    // Define tus claves de traducción aquí para facilitar su gestión
+    private static final String LANG_PREFIX = "commands.supermodreborn.money.";
+
+    private static final String MSG_GET_MONEY_SUCCESS = LANG_PREFIX + "get.success";
+    private static final String MSG_SET_MONEY_SUCCESS = LANG_PREFIX + "set.success";
+    private static final String MSG_ADD_MONEY_SUCCESS = LANG_PREFIX + "add.success";
+    private static final String MSG_REMOVE_MONEY_SUCCESS = LANG_PREFIX + "remove.success";
+    private static final String MSG_REMOVE_MONEY_FAILURE_NOT_ENOUGH = LANG_PREFIX + "remove.failure.not_enough";
+    private static final String MSG_CHECK_MONEY_SUCCESS_HAS_ENOUGH = LANG_PREFIX + "check.success.has_enough";
+    private static final String MSG_CHECK_MONEY_SUCCESS_NOT_ENOUGH = LANG_PREFIX + "check.success.not_enough";
+
+
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(Commands.literal("supermodreborn")
                 .requires(source -> source.hasPermission(2)) // Requires permission level 2 (operator)
@@ -29,21 +41,21 @@ public class ModCommands {
                         )
                         .then(Commands.literal("add")
                                 .then(Commands.argument("player", EntityArgument.player()) // Argument for player
-                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value (FIXED)
+                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value
                                                 .executes(context -> addPlayerMoney(context.getSource(),
                                                         EntityArgument.getPlayer(context, "player"),
                                                         IntegerArgumentType.getInteger(context, "value")))))
                         )
                         .then(Commands.literal("remove")
                                 .then(Commands.argument("player", EntityArgument.player()) // Argument for player
-                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value (FIXED)
+                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value
                                                 .executes(context -> removePlayerMoney(context.getSource(),
                                                         EntityArgument.getPlayer(context, "player"),
                                                         IntegerArgumentType.getInteger(context, "value")))))
                         )
                         .then(Commands.literal("check")
                                 .then(Commands.argument("player", EntityArgument.player()) // Argument for player
-                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value (FIXED)
+                                        .then(Commands.argument("value", IntegerArgumentType.integer()) // Argument for integer value
                                                 .executes(context -> checkPlayerMoney(context.getSource(),
                                                         EntityArgument.getPlayer(context, "player"),
                                                         IntegerArgumentType.getInteger(context, "value")))))
@@ -54,20 +66,20 @@ public class ModCommands {
 
     private static int getPlayerMoney(CommandSourceStack source, ServerPlayer player) {
         int money = ModDataComponents.getMoney(player);
-        source.sendSuccess(() -> Component.literal(player.getDisplayName().getString() + " has " + money + " money."), false); // false: don't broadcast to other ops
+        source.sendSuccess(() -> Component.translatable(MSG_GET_MONEY_SUCCESS, player.getDisplayName(), money), false); // false: don't broadcast to other ops
         return 1;
     }
 
     private static int setPlayerMoney(CommandSourceStack source, ServerPlayer player, int value) {
         ModDataComponents.setMoney(player, value);
-        source.sendSuccess(() -> Component.literal("Set " + player.getDisplayName().getString() + "'s money to " + value + "."), true); // true: notify other ops
+        source.sendSuccess(() -> Component.translatable(MSG_SET_MONEY_SUCCESS, player.getDisplayName(), value), true); // true: notify other ops
         return 1;
     }
 
     private static int addPlayerMoney(CommandSourceStack source, ServerPlayer player, int value) {
         ModDataComponents.addMoney(player, value);
         int newBalance = ModDataComponents.getMoney(player);
-        source.sendSuccess(() -> Component.literal("Added " + value + " to " + player.getDisplayName().getString() + "'s money. New balance: " + newBalance + "."), true);
+        source.sendSuccess(() -> Component.translatable(MSG_ADD_MONEY_SUCCESS, value, player.getDisplayName(), newBalance), true);
         return 1;
     }
 
@@ -75,10 +87,10 @@ public class ModCommands {
         int result = ModDataComponents.removeMoney(player, valueToRemove);
         int currentMoney = ModDataComponents.getMoney(player);
         if(result == 0){
-            source.sendFailure(Component.literal(player.getDisplayName().getString() + " does not have enough money. Has: " + currentMoney + ", Tried to remove: " + valueToRemove + "."));
+            source.sendFailure(Component.translatable(MSG_REMOVE_MONEY_FAILURE_NOT_ENOUGH, player.getDisplayName(), currentMoney, valueToRemove));
             return 0;
         }
-        source.sendSuccess(() -> Component.literal("Removed " + valueToRemove + " from " + player.getDisplayName().getString() + "'s money. New balance: " + currentMoney + "."), true);
+        source.sendSuccess(() -> Component.translatable(MSG_REMOVE_MONEY_SUCCESS, valueToRemove, player.getDisplayName(), currentMoney), true);
         return 1; // Success
     }
 
@@ -86,9 +98,9 @@ public class ModCommands {
         int result = ModDataComponents.checkMoney(player, valueToCheck);
         int currentMoney = ModDataComponents.getMoney(player);
         if (result == 1) {
-            source.sendSuccess(() -> Component.literal(player.getDisplayName().getString() + " has " + currentMoney + " money (requires " + valueToCheck + "). They have enough."), false);
+            source.sendSuccess(() -> Component.translatable(MSG_CHECK_MONEY_SUCCESS_HAS_ENOUGH, player.getDisplayName(), currentMoney, valueToCheck), false);
         } else {
-            source.sendSuccess(() -> Component.literal(player.getDisplayName().getString() + " has " + currentMoney + " money (requires " + valueToCheck + "). They do not have enough."), false);
+            source.sendSuccess(() -> Component.translatable(MSG_CHECK_MONEY_SUCCESS_NOT_ENOUGH, player.getDisplayName(), currentMoney, valueToCheck), false);
         }
         return 1; // The command itself (performing the check and reporting) executed successfully.
     }
