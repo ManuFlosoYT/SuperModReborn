@@ -1,5 +1,7 @@
 package net.manufloso.event;
 
+import net.manufloso.command.ModCommands;
+import net.manufloso.component.ModDataComponents;
 import net.manufloso.item.ModItems;
 import net.manufloso.item.custom.HammerItem;
 import net.manufloso.item.custom.LargeShovelItem;
@@ -19,7 +21,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.minecraft.core.particles.ParticleTypes;
 
@@ -138,6 +143,19 @@ public class ModEvents {
             if(player.fallDistance > 0.0F) {
                 player.fallDistance = 0.0F;
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onCommandsRegister(RegisterCommandsEvent event) {
+        ModCommands.register(event.getDispatcher());
+    }
+
+    @SubscribeEvent
+    public static void copyOnDeath(PlayerEvent.Clone event)
+    {
+        if (event.isWasDeath() && event.getOriginal().hasData(ModDataComponents.MONEY)) {
+            event.getEntity().setData(ModDataComponents.MONEY, event.getOriginal().getData(ModDataComponents.MONEY));
         }
     }
 }
