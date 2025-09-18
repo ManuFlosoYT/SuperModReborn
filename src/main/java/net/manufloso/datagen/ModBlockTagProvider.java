@@ -24,7 +24,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.LITHIUM_BLOCK.get())
                 .add(ModBlocks.LITHIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get())
-
                 .add(ModBlocks.CHUNK_LOADER.get())
 
                 // DECO BLOCKS

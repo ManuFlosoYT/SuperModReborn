@@ -138,6 +138,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BURNT_NETHER_BRICKS);
         blockWithItem(ModBlocks.CHISELED_ENDSTONE_BRICKS);
         blockWithItem(ModBlocks.INFUSED_ENDSTONE_BRICKS);
+
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
