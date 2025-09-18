@@ -34,6 +34,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.ENDIUM_LEGGINGS);
                         output.accept(ModItems.ENDIUM_BOOTS);
                         output.accept(ModItems.BACKPACK);
+                        output.accept(ModItems.LARGE_BACKPACK);
                         output.accept(ModItems.ENDIUM_HAMMER);
                         output.accept(ModItems.NETHERITE_HAMMER);
                         output.accept(ModItems.DIAMOND_HAMMER);

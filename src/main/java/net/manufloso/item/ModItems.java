@@ -107,6 +107,9 @@ public class ModItems
     public static final DeferredItem<Item> BACKPACK = ITEMS.register("backpack",
             () -> new BackpackItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).fireResistant()));
 
+    public static final DeferredItem<Item> LARGE_BACKPACK = ITEMS.register("large_backpack",
+            () -> new LargeBackpackItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).fireResistant()));
+
     public static final DeferredItem<Item> SLINGSHOT = ITEMS.register("slingshot",
             () -> new SlingshotItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
