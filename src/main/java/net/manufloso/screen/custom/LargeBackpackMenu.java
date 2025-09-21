@@ -15,8 +15,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class LargeBackpackMenu extends AbstractContainerMenu {
     public static final int BACKPACK_ROWS = 8;
-    public static final int BACKPACK_COLS = 9;
-    public static final int BACKPACK_SIZE = BACKPACK_ROWS * BACKPACK_COLS;
+    public static final int BACKPACK_COLS = 23;
+    public static final int BACKPACK_SLOTS = BACKPACK_ROWS * BACKPACK_COLS;
+    public static final int EXTRA_ROWS = 4;
+    public static final int EXTRA_COLS = 12;
+    public static final int EXTRA_SLOTS = EXTRA_ROWS * EXTRA_COLS;
+    public static final int BACKPACK_SIZE = BACKPACK_SLOTS + EXTRA_SLOTS;
 
     private final ItemStack backpackStack;
     private final ItemStackHandler backpackInventory;
@@ -30,8 +34,8 @@ public class LargeBackpackMenu extends AbstractContainerMenu {
         this.backpackInventory = LargeBackpackItem.getInventory(this.backpackStack, this.level);
 
         // Backpack slots
-        int backpackSlotX = 7;
-        int backpackSlotY = 6;
+        final int backpackSlotX = 49;
+        final int backpackSlotY = 6;
         for (int row = 0; row < BACKPACK_ROWS; ++row) {
             for (int col = 0; col < BACKPACK_COLS; ++col) {
                 this.addSlot(new SlotItemHandler(this.backpackInventory, col + row * BACKPACK_COLS,
@@ -39,19 +43,32 @@ public class LargeBackpackMenu extends AbstractContainerMenu {
             }
         }
 
+        int contador = BACKPACK_SLOTS-1;
+        for (int row = BACKPACK_ROWS; row < BACKPACK_ROWS + EXTRA_ROWS; row++) {
+            for (int col = 0; col < BACKPACK_COLS; col++) {
+                if(col >= 6 && col < 17) continue; // Saltar las columnas que no se usan
+                contador++;
+                this.addSlot(new SlotItemHandler(this.backpackInventory, contador,
+                        backpackSlotX + col * 18, backpackSlotY + row * 18));
+            }
+        }
+
         // Player Inventory & Hotbar
-        int playerInvYOffset = 6;
-        int playerHotbarYOffset = 4;
-        int playerInvY = backpackSlotY + BACKPACK_ROWS * 18 + playerInvYOffset;
-        int playerHotbarY = playerInvY + 3 * 18 + playerHotbarYOffset;
+        final int playerInvYOffset = 6;
+        final int playerHotbarYOffset = 4;
+        final int playerInvY = backpackSlotY + BACKPACK_ROWS * 18 + playerInvYOffset;
+        final int playerHotbarY = playerInvY + 3 * 18 + playerHotbarYOffset;
+        final int playerInventoryOffsetX = 9 * 18;
+        final int playerInventoryOffsetXEnd = playerInventoryOffsetX + 14;
 
         for (int row = 0; row < 3; ++row) {
             for (int col = 0; col < 9; ++col) {
-                this.addSlot(new Slot(playerInventory, col + row * 9 + 9, 8 + col * 18, playerInvY + row * 18));
+                this.addSlot(new Slot(playerInventory, col + row * 9 + 9, playerInventoryOffsetXEnd + col * 18, playerInvY + row * 18));
             }
         }
+
         for (int col = 0; col < 9; ++col) {
-            this.addSlot(new Slot(playerInventory, col, 8 + col * 18, playerHotbarY));
+            this.addSlot(new Slot(playerInventory, col, playerInventoryOffsetXEnd + col * 18, playerHotbarY));
         }
     }
 

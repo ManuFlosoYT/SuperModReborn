@@ -13,15 +13,38 @@ public class LargeBackpackScreen extends AbstractContainerScreen<LargeBackpackMe
             ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "textures/gui/backpack/large_backpack_gui.png");
     public LargeBackpackScreen(LargeBackpackMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        //imageWidth = 256;
+        imageWidth = 512;
         imageHeight = 235;
     }
 
     @Override
     protected void renderBg(@NotNull GuiGraphics guiGraphics, float partialTick, int mouseX, int mouseY) {
-        int x = (width - imageWidth) / 2;
-        int y = (height - imageHeight) / 2;
-        guiGraphics.blit(GUI_TEXTURE, x, y, 0, 0, imageWidth, imageHeight);
+        // --- CÁLCULO PARA CENTRAR (Esto ya lo tenías bien) ---
+        int imageWidth = 425;
+        int imageHeight = 235;
+        int centeredX = (this.width - imageWidth) / 2;
+        int centeredY = (this.height - imageHeight) / 2;
+
+        // --- IMPORTANTE: Dimensiones REALES del archivo PNG ---
+        // Aquí debes especificar el tamaño exacto de tu archivo de imagen.
+        // Si tu "your_texture.png" mide 425x235, pon esos valores.
+        // Si lo has puesto en una imagen más grande (ej. 512x256), pon esas dimensiones.
+        int textureWidth = 425;
+        int textureHeight = 235;
+
+
+        // --- EL COMANDO BLIT CORRECTO PARA EVITAR EL TILING ---
+        guiGraphics.blit(
+                GUI_TEXTURE,     // La textura que quieres dibujar
+                centeredX,          // Posición X en la pantalla
+                centeredY,          // Posición Y en la pantalla
+                0,                  // U: Coordenada X inicial en el ARCHIVO de textura (esquina superior izquierda)
+                0,                  // V: Coordenada Y inicial en el ARCHIVO de textura (esquina superior izquierda)
+                imageWidth,         // Ancho de la imagen a dibujar en PANTALLA
+                imageHeight,        // Alto de la imagen a dibujar en PANTALLA
+                textureWidth,       // Ancho TOTAL del archivo de textura PNG
+                textureHeight       // Alto TOTAL del archivo de textura PNG
+        );
     }
 
     @Override

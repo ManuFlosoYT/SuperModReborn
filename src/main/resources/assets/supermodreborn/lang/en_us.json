@@ -140,6 +140,7 @@
   "item.supermodreborn.tomato_seeds": "Tomato Seeds",
   "item.supermodreborn.endium_scrap": "Endium Scrap",
   "item.supermodreborn.backpack": "Backpack",
+  "item.supermodreborn.large_backpack": "Large Backpack",
   "item.supermodreborn.netherite_hammer": "Netherite Hammer",
   "item.supermodreborn.diamond_hammer": "Diamond Hammer",
   "item.supermodreborn.iron_hammer": "Iron Hammer",
@@ -176,6 +177,7 @@
 
   "container.supermodreborn.large_chest": "Large Chest",
   "container.supermodreborn.backpack": "Backpack",
+  "container.supermodreborn.large_backpack": "Large Backpack",
 
   "commands.supermodreborn.money.get.success": "%s has %s money.",
   "commands.supermodreborn.money.set.success": "Set %s's money to %s.",
