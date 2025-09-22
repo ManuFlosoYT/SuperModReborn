@@ -132,6 +132,26 @@ public class ModItems
     public static final DeferredItem<Item> BRONZE_MINECOIN = ITEMS.register("bronze_minecoin",
             () -> new Item(new Item.Properties()));
 
+
+    public static final DeferredItem<Item> DOUGH = ITEMS.register("dough",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ROLLER = ITEMS.register("roller",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> PIZZA_BASE = ITEMS.register("pizza_base",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> RAW_PIZZA = ITEMS.register("raw_pizza",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> PIZZA = ITEMS.register("pizza",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.PIZZA
+                    )
+            )
+    );
+
     public static void register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);

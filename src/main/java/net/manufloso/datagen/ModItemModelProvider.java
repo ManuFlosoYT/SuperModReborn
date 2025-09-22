@@ -80,6 +80,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SILVER_MINECOIN.get());
         basicItem(ModItems.GOLD_MINECOIN.get());
         basicItem(ModItems.PLATINUM_MINECOIN.get());
+        basicItem(ModItems.DOUGH.get());
+        basicItem(ModItems.ROLLER.get());
+        basicItem(ModItems.PIZZA_BASE.get());
+        basicItem(ModItems.RAW_PIZZA.get());
+        basicItem(ModItems.PIZZA.get());
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

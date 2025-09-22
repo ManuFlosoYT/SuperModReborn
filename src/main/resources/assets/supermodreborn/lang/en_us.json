@@ -156,6 +156,11 @@
   "item.supermodreborn.silver_minecoin": "Silver Minecoin",
   "item.supermodreborn.gold_minecoin": "Gold Minecoin",
   "item.supermodreborn.platinum_minecoin": "Platinum Minecoin",
+  "item.supermodreborn.dough": "Dough",
+  "item.supermodreborn.roller": "Roller",
+  "item.supermodreborn.pizza_base": "Pizza Base",
+  "item.supermodreborn.raw_pizza": "Raw Pizza",
+  "item.supermodreborn.pizza": "Pizza",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",

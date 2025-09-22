@@ -48,6 +48,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.SLIME_BOOTS);
                         output.accept(ModItems.TORCHER);
                         output.accept(ModItems.BEDROCK_BREAKER);
+                        output.accept(ModItems.ROLLER);
                     })
                     .build());
 
@@ -60,6 +61,10 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.CHEESE);
                         output.accept(ModItems.TOMATO);
                         output.accept(ModItems.TOMATO_SEEDS);
+                        output.accept(ModItems.DOUGH);
+                        output.accept(ModItems.PIZZA_BASE);
+                        output.accept(ModItems.RAW_PIZZA);
+                        output.accept(ModItems.PIZZA);
                     })
                     .build());
 
