@@ -3,7 +3,6 @@ package net.manufloso.item;
 import net.manufloso.block.ModBlocks;
 import net.manufloso.item.custom.*;
 import net.manufloso.supermodreborn;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -151,6 +150,12 @@ public class ModItems
                     )
             )
     );
+
+
+    public static final DeferredItem<StackoverAXE> STACKOVER_AXE = ITEMS.register("stackover_axe",
+            () -> new StackoverAXE(ModToolTiers.ENDIUM, new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus)
     {

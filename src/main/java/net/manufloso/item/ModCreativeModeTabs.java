@@ -27,6 +27,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.ENDIUM_SWORD);
                         output.accept(ModItems.ENDIUM_PICKAXE);
                         output.accept(ModItems.ENDIUM_AXE);
+                        output.accept(ModItems.STACKOVER_AXE);
                         output.accept(ModItems.ENDIUM_SHOVEL);
                         output.accept(ModItems.ENDIUM_HOE);
                         output.accept(ModItems.ENDIUM_HELMET);
