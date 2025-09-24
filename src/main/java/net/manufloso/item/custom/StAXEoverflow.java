@@ -14,6 +14,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.*;
 
 public class StAXEoverflow extends AxeItem {
+    final int MAX_BLOCKS = 128;
+    final int HURT_PER_BLOCK = 1;
+
     public StAXEoverflow(Tier tier, Properties properties) {
         super(tier, properties);
     }
@@ -35,9 +38,8 @@ public class StAXEoverflow extends AxeItem {
         visited.add(startPos);
 
         int brokenBlocks = 0;
-        int limit = 128;
 
-        while (!queue.isEmpty() && brokenBlocks < limit) {
+        while (!queue.isEmpty() && brokenBlocks < MAX_BLOCKS) {
 
             BlockPos currentPos = queue.poll();
 
@@ -57,20 +59,20 @@ public class StAXEoverflow extends AxeItem {
                         if (neighborState.is(BlockTags.LOGS)) {
                             visited.add(neighborPos);
                             if (level.destroyBlock(neighborPos, true, player)) {
-                                stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
+                                stack.hurtAndBreak(HURT_PER_BLOCK, player, EquipmentSlot.MAINHAND);
                                 brokenBlocks++;
-                                if (brokenBlocks >= limit) {
+                                if (brokenBlocks >= MAX_BLOCKS) {
                                     break;
                                 }
                                 queue.add(neighborPos);
                             }
                         }
                     }
-                    if (brokenBlocks >= limit) {
+                    if (brokenBlocks >= MAX_BLOCKS) {
                         break;
                     }
                 }
-                if (brokenBlocks >= limit) {
+                if (brokenBlocks >= MAX_BLOCKS) {
                     break;
                 }
             }
