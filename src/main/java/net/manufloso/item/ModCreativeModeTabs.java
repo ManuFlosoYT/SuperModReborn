@@ -27,7 +27,6 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.ENDIUM_SWORD);
                         output.accept(ModItems.ENDIUM_PICKAXE);
                         output.accept(ModItems.ENDIUM_AXE);
-                        output.accept(ModItems.STACKOVER_AXE);
                         output.accept(ModItems.ENDIUM_SHOVEL);
                         output.accept(ModItems.ENDIUM_HOE);
                         output.accept(ModItems.ENDIUM_HELMET);
@@ -44,6 +43,10 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.LARGE_NETHERITE_SHOVEL);
                         output.accept(ModItems.LARGE_DIAMOND_SHOVEL);
                         output.accept(ModItems.LARGE_IRON_SHOVEL);
+                        output.accept(ModItems.IRON_STAXEOVERFLOW);
+                        output.accept(ModItems.DIAMOND_STAXEOVERFLOW);
+                        output.accept(ModItems.NETHERITE_STAXEOVERFLOW);
+                        output.accept(ModItems.ENDIUM_STAXEOVERFLOW);
                         output.accept(ModItems.LAUNCHER);
                         output.accept(ModItems.SLINGSHOT);
                         output.accept(ModItems.SLIME_BOOTS);

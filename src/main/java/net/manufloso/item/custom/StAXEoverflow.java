@@ -13,8 +13,8 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.*;
 
-public class StackoverAXE extends AxeItem {
-    public StackoverAXE(Tier tier, Properties properties) {
+public class StAXEoverflow extends AxeItem {
+    public StAXEoverflow(Tier tier, Properties properties) {
         super(tier, properties);
     }
 
@@ -35,7 +35,7 @@ public class StackoverAXE extends AxeItem {
         visited.add(startPos);
 
         int brokenBlocks = 0;
-        int limit = 2048;
+        int limit = 128;
 
         while (!queue.isEmpty() && brokenBlocks < limit) {
 
@@ -54,7 +54,7 @@ public class StackoverAXE extends AxeItem {
                         }
 
                         BlockState neighborState = level.getBlockState(neighborPos);
-                        if (neighborState.is(BlockTags.LOGS) || neighborState.is(BlockTags.LEAVES)) {
+                        if (neighborState.is(BlockTags.LOGS)) {
                             visited.add(neighborPos);
                             if (level.destroyBlock(neighborPos, true, player)) {
                                 stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);

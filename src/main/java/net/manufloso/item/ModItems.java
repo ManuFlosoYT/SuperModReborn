@@ -66,16 +66,16 @@ public class ModItems
 
     public static final DeferredItem<LargeShovelItem> LARGE_ENDIUM_SHOVEL = ITEMS.register("large_endium_shovel",
             () -> new LargeShovelItem(ModToolTiers.ENDIUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ENDIUM, 20F, -3.5f))));
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.ENDIUM, 20F, -3.5f))));
     public static final DeferredItem<LargeShovelItem> LARGE_NETHERITE_SHOVEL = ITEMS.register("large_netherite_shovel",
             () -> new LargeShovelItem(Tiers.NETHERITE, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(Tiers.NETHERITE, 8F, -3.5f))));
+                    .attributes(ShovelItem.createAttributes(Tiers.NETHERITE, 8F, -3.5f))));
     public static final DeferredItem<LargeShovelItem> LARGE_DIAMOND_SHOVEL = ITEMS.register("large_diamond_shovel",
             () -> new LargeShovelItem(Tiers.DIAMOND, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, 6F, -3.5f))));
+                    .attributes(ShovelItem.createAttributes(Tiers.DIAMOND, 6F, -3.5f))));
     public static final DeferredItem<LargeShovelItem> LARGE_IRON_SHOVEL = ITEMS.register("large_iron_shovel",
             () -> new LargeShovelItem(Tiers.IRON, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(Tiers.IRON, 4F, -3.5f))));
+                    .attributes(ShovelItem.createAttributes(Tiers.IRON, 4F, -3.5f))));
 
 
     public static final DeferredItem<ArmorItem> ENDIUM_HELMET = ITEMS.register("endium_helmet",
@@ -152,8 +152,21 @@ public class ModItems
     );
 
 
-    public static final DeferredItem<StackoverAXE> STACKOVER_AXE = ITEMS.register("stackover_axe",
-            () -> new StackoverAXE(ModToolTiers.ENDIUM, new Item.Properties()));
+    public static final DeferredItem<StAXEoverflow> IRON_STAXEOVERFLOW = ITEMS.register("iron_staxeoverflow",
+            () -> new StAXEoverflow(Tiers.IRON, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(Tiers.IRON, 8F, -3.5f))));
+
+    public static final DeferredItem<StAXEoverflow> DIAMOND_STAXEOVERFLOW = ITEMS.register("diamond_staxeoverflow",
+            () -> new StAXEoverflow(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(Tiers.DIAMOND, 12F, -3.5f))));
+
+    public static final DeferredItem<StAXEoverflow> NETHERITE_STAXEOVERFLOW = ITEMS.register("netherite_staxeoverflow",
+            () -> new StAXEoverflow(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(Tiers.NETHERITE, 18F, -3.0f))));
+
+    public static final DeferredItem<StAXEoverflow> ENDIUM_STAXEOVERFLOW = ITEMS.register("endium_staxeoverflow",
+            () -> new StAXEoverflow(ModToolTiers.ENDIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.ENDIUM, 400F, -2.5f))));
 
 
 

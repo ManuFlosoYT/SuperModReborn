@@ -161,6 +161,10 @@
   "item.supermodreborn.pizza_base": "Pizza Base",
   "item.supermodreborn.raw_pizza": "Raw Pizza",
   "item.supermodreborn.pizza": "Pizza",
+  "item.supermodreborn.iron_staxeoverflow": "Iron Staxeoverflow",
+  "item.supermodreborn.diamond_staxeoverflow": "Diamond Staxeoverflow",
+  "item.supermodreborn.netherite_staxeoverflow": "Netherite Staxeoverflow",
+  "item.supermodreborn.endium_staxeoverflow": "Endium Staxeoverflow",
 
   "tooltip.supermodreborn.chunk_loader": "Place this block to keep this chunk loaded",
   "tooltip.supermodreborn.launcher": "Right click on the ground to fly",
