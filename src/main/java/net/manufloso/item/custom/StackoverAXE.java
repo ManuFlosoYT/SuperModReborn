@@ -38,6 +38,7 @@ public class StackoverAXE extends AxeItem {
         int limit = 2048;
 
         while (!queue.isEmpty() && brokenBlocks < limit) {
+
             BlockPos currentPos = queue.poll();
 
             for (int x = -1; x <= 1; x++) {
@@ -53,10 +54,10 @@ public class StackoverAXE extends AxeItem {
                         }
 
                         BlockState neighborState = level.getBlockState(neighborPos);
-                        if (neighborState.is(BlockTags.LOGS)) {
+                        if (neighborState.is(BlockTags.LOGS) || neighborState.is(BlockTags.LEAVES)) {
                             visited.add(neighborPos);
                             if (level.destroyBlock(neighborPos, true, player)) {
-                                stack.hurtAndBreak(1, player, Objects.requireNonNull(stack.getEquipmentSlot()));
+                                stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
                                 brokenBlocks++;
                                 if (brokenBlocks >= limit) {
                                     break;
