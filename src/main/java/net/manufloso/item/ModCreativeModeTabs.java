@@ -216,7 +216,7 @@ public class ModCreativeModeTabs
                         output.accept(ModItems.SILVER_MINECOIN);
                         output.accept(ModItems.GOLD_MINECOIN);
                         output.accept(ModItems.PLATINUM_MINECOIN);
-                        output.accept(ModBlocks.BANK);
+                        output.accept(ModBlocks.MINEZON);
                     })
                     .build());
 

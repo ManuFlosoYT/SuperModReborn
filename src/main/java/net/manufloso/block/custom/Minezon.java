@@ -2,8 +2,15 @@ package net.manufloso.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.StonecutterMenu;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -20,17 +27,17 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import net.minecraft.world.SimpleMenuProvider;
 
-/**
- * A simple horizontally-facing block to support a distinct "front" face texture
- * while the remaining faces share another texture via the vanilla "orientable" model.
- */
-public class Bank extends HorizontalDirectionalBlock {
+public class Minezon extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public static final MapCodec<Bank> CODEC = simpleCodec(Bank::new);
+    public static final MapCodec<Minezon> CODEC = simpleCodec(Minezon::new);
 
-    public Bank(BlockBehaviour.Properties properties) {
+    // Title used for the Stonecutter container (use vanilla key for localization)
+    private static final Component MENU_TITLE = Component.translatable("container.supermodreborn.minezon");
+
+    public Minezon(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, net.minecraft.core.Direction.NORTH));
     }
@@ -67,12 +74,22 @@ public class Bank extends HorizontalDirectionalBlock {
         return Shapes.block();
     }
 
+    // Interaction while holding any item
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if(!level.isClientSide()) {
-            // send chat message
-            player.sendSystemMessage(state.getBlock().getName());
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        // Server opens the menu; client just reports sided success to avoid double handling
+        if (!level.isClientSide()) {
+            final ContainerLevelAccess access = ContainerLevelAccess.create(level, pos);
+            player.openMenu(new SimpleMenuProvider(
+                    (containerId, playerInventory, ply) -> new StonecutterMenu(containerId, playerInventory, access) {
+                        @Override
+                        public boolean stillValid(Player plyr) {
+                            // Treat this custom block as valid for the container so it doesn't auto-close
+                            return AbstractContainerMenu.stillValid(access, plyr, Minezon.this);
+                        }
+                    },
+                    MENU_TITLE));
         }
-        return InteractionResult.SUCCESS;
+        return ItemInteractionResult.sidedSuccess(level.isClientSide());
     }
 }

@@ -140,9 +140,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.INFUSED_ENDSTONE_BRICKS);
 
         // Front-facing block: distinct front texture + shared texture for the rest (top, bottom, sides)
-        frontFacingBlock(ModBlocks.BANK.get(),
-                modLoc("block/bank_front"),
-                modLoc("block/bank_side"));
+        frontFacingBlock(ModBlocks.MINEZON.get(),
+                modLoc("block/minezon_front"),
+                modLoc("block/minezon_side"));
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

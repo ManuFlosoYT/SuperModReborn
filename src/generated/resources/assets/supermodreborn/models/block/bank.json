@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "supermodreborn:block/bank_front",
-    "side": "supermodreborn:block/bank_side",
-    "top": "supermodreborn:block/bank_side"
-  }
-}

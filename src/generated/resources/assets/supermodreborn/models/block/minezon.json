@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "supermodreborn:block/minezon_front",
+    "side": "supermodreborn:block/minezon_side",
+    "top": "supermodreborn:block/minezon_side"
+  }
+}

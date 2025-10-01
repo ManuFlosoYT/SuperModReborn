@@ -1,5 +1,4 @@
-// 1.21.1	2025-10-01T10:54:17.371921081	Loot Tables
-807412f6e8de750c20b56f26be0853069eab2e2b data/supermodreborn/loot_table/blocks/bank.json
+// 1.21.1	2025-10-01T11:13:08.706781711	Loot Tables
 11b24a4f5bc952e1c645633f2422d100688d52f9 data/supermodreborn/loot_table/blocks/burnt_nether_bricks.json
 0ed145232540bf3a3d255be6b56cb0caacef6b83 data/supermodreborn/loot_table/blocks/chiseled_endstone_bricks.json
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
@@ -94,6 +93,7 @@ e9237ce9d649c44a4585f0610651ef5a868a1964 data/supermodreborn/loot_table/blocks/h
 3025984d9021c64363cbfca2e8b54dc971058404 data/supermodreborn/loot_table/blocks/infused_endstone_bricks.json
 0deae033e778190a585eb1121916147107434a61 data/supermodreborn/loot_table/blocks/lithium_block.json
 480153e640b5dc7c118872cd37a7d381e71f1e51 data/supermodreborn/loot_table/blocks/lithium_ore.json
+26a3f7ab919e1ee95dbcdc690031e5e1c0b53e39 data/supermodreborn/loot_table/blocks/minezon.json
 610c2d19356c83955f0073b0c1db26ecdcf4570c data/supermodreborn/loot_table/blocks/palm_button.json
 2002200bd80aeda860dfad2ff55d65b84b878b77 data/supermodreborn/loot_table/blocks/palm_door.json
 617a14289908a232a98b9b0c53e583ab5de128db data/supermodreborn/loot_table/blocks/palm_fence.json

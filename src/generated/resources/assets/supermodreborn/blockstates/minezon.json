@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "supermodreborn:block/minezon",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "supermodreborn:block/minezon"
+    },
+    "facing=south": {
+      "model": "supermodreborn:block/minezon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "supermodreborn:block/minezon",
+      "y": 270
+    }
+  }
+}
