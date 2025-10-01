@@ -139,6 +139,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CHISELED_ENDSTONE_BRICKS);
         blockWithItem(ModBlocks.INFUSED_ENDSTONE_BRICKS);
 
+        // Front-facing block: distinct front texture + shared texture for the rest (top, bottom, sides)
+        frontFacingBlock(ModBlocks.BANK.get(),
+                modLoc("block/bank_front"),
+                modLoc("block/bank_side"));
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
@@ -192,5 +196,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("supermodreborn:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    // Generates an orientable horizontal model: front texture and one shared for all other faces (top included)
+    private void frontFacingBlock(Block block, ResourceLocation front, ResourceLocation sideAndTop) {
+        var model = models().withExistingParent(BuiltInRegistries.BLOCK.getKey(block).getPath(), mcLoc("block/orientable"))
+                .texture("front", front)
+                .texture("side", sideAndTop)
+                .texture("top", sideAndTop);
+        horizontalBlock(block, model);
+        simpleBlockItem(block, new ModelFile.UncheckedModelFile(modLoc("block/" + BuiltInRegistries.BLOCK.getKey(block).getPath())));
     }
 }

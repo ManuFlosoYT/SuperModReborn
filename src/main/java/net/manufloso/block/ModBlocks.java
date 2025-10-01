@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -1038,7 +1037,16 @@ public class ModBlocks
                     .requiresCorrectToolForDrops()
                     .noOcclusion() // Si tu modelo no ocupa todo el bloque
             ));
-    
+
+    // New front-facing decorative block (distinct front texture, shared texture for all other faces)
+    public static final DeferredBlock<Block> BANK = registerBlock(
+            "bank",
+            () -> new Bank(BlockBehaviour.Properties.of()
+                    .strength(1.5f)
+                    .sound(SoundType.STONE)
+            )
+    );
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

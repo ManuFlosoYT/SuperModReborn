@@ -178,6 +178,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ENDIUM_BLOCK.get());
         dropSelf(ModBlocks.PEDESTAL.get());
 
+        dropSelf(ModBlocks.BANK.get());
+
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));
 
