@@ -1,16 +1,19 @@
 package net.manufloso.block.custom;
 
+import com.google.common.collect.Lists;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.ResultContainer;
 import net.minecraft.world.inventory.StonecutterMenu;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -29,17 +32,28 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import net.minecraft.world.SimpleMenuProvider;
 
+import java.util.List;
+
 public class Minezon extends HorizontalDirectionalBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public static final MapCodec<Minezon> CODEC = simpleCodec(Minezon::new);
+
+    private List<Item> items = Lists.newArrayList();;
+    final ResultContainer resultContainer;
 
     // Title used for the Stonecutter container (use vanilla key for localization)
     private static final Component MENU_TITLE = Component.translatable("container.supermodreborn.minezon");
 
     public Minezon(BlockBehaviour.Properties properties) {
         super(properties);
+        this.resultContainer = new ResultContainer();
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, net.minecraft.core.Direction.NORTH));
+
+        items.add(Items.DIAMOND);
+        items.add(Items.EMERALD);
+        items.add(Items.LAPIS_LAZULI);
+
     }
 
     @Override

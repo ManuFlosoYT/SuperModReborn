@@ -1041,10 +1041,12 @@ public class ModBlocks
     // New front-facing decorative block (distinct front texture, shared texture for all other faces)
     public static final DeferredBlock<Block> MINEZON = registerBlock(
             "minezon",
-            () -> new Minezon(BlockBehaviour.Properties.of()
-                    .strength(1.5f)
-                    .sound(SoundType.STONE)
-            )
+            () -> {
+                return new Minezon(BlockBehaviour.Properties.of()
+                        .strength(1.5f)
+                        .sound(SoundType.STONE)
+                        );
+            }
     );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
