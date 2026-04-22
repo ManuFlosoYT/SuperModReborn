@@ -1049,6 +1049,15 @@ public class ModBlocks
             }
     );
 
+    public static final DeferredBlock<Block> TRASH_BIN = registerBlock(
+            "trash_bin",
+            () -> new TrashBinBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f)
+                    .sound(SoundType.METAL)
+                    .noOcclusion()
+            )
+    );
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

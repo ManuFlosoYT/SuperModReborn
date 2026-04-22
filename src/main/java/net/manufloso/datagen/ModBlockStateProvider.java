@@ -143,6 +143,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         frontFacingBlock(ModBlocks.MINEZON.get(),
                 modLoc("block/minezon_front"),
                 modLoc("block/minezon_side"));
+
+        var trashBinModel = models().withExistingParent(ModBlocks.TRASH_BIN.getId().getPath(), modLoc("custom/basura"))
+                .texture("1", mcLoc("block/iron_block"));
+        horizontalBlock(ModBlocks.TRASH_BIN.get(), trashBinModel);
+        simpleBlockItem(ModBlocks.TRASH_BIN.get(), trashBinModel);
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
@@ -196,6 +201,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("supermodreborn:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    private void customItemModel(DeferredBlock<Block> block) {
+        itemModels().withExistingParent(block.getId().getPath(),
+                ResourceLocation.fromNamespaceAndPath(supermodreborn.MODID, "block/" + block.getId().getPath()));
     }
 
     // Generates an orientable horizontal model: front texture and one shared for all other faces (top included)

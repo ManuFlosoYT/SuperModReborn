@@ -1,0 +1,6 @@
+{
+  "parent": "supermodreborn:custom/basura",
+  "textures": {
+    "1": "minecraft:block/iron_block"
+  }
+}

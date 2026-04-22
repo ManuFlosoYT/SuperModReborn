@@ -180,6 +180,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.MINEZON.get());
 
+        dropSelf(ModBlocks.TRASH_BIN.get());
+
         //add(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(),
         //        block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get(), 1, 5));
 

@@ -14,6 +14,7 @@ import net.manufloso.screen.ModMenuTypes;
 import net.manufloso.screen.custom.BackpackScreen;
 import net.manufloso.screen.custom.LargeBackpackScreen;
 import net.manufloso.screen.custom.PedestalScreen;
+import net.manufloso.screen.custom.TrashBinScreen;
 import net.manufloso.sound.ModSounds;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +30,9 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.manufloso.network.EmptyTrashPayload;
 
 
 @Mod(supermodreborn.MODID)
@@ -48,6 +52,16 @@ public class supermodreborn
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modEventBus.addListener(this::registerNetworks);
+    }
+    
+    private void registerNetworks(final RegisterPayloadHandlersEvent event) {
+        final PayloadRegistrar registrar = event.registrar(MODID);
+        registrar.playToServer(
+                EmptyTrashPayload.TYPE,
+                EmptyTrashPayload.STREAM_CODEC,
+                EmptyTrashPayload::handleData
+        );
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -64,6 +78,7 @@ public class supermodreborn
             event.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
             event.register(ModMenuTypes.BACKPACK_MENU.get(), BackpackScreen::new);
             event.register(ModMenuTypes.LARGE_BACKPACK_MENU.get(), LargeBackpackScreen::new);
+            event.register(ModMenuTypes.TRASH_BIN_MENU.get(), TrashBinScreen::new);
         }
 
         @SubscribeEvent
