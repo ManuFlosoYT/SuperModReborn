@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Datagen + Client" type="BatchConfigurationType" factoryName="Batch">
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <module name="" />
+    <option name="SCRIPT_NAME" value="" />
+    <option name="PARAMETERS" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Datagen" run_configuration_type="Application" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Client" run_configuration_type="Application" />
+    </method>
+  </configuration>
+</component>
