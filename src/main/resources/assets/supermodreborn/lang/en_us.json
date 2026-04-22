@@ -194,5 +194,6 @@
   "commands.supermodreborn.money.remove.success": "Removed %s from %s's money. New balance: %s.",
   "commands.supermodreborn.money.remove.failure.not_enough": "%s does not have enough money. Has: %s, Tried to remove: %s.",
   "commands.supermodreborn.money.check.success.has_enough": "%s has %s money (requires %s). They have enough.",
-  "commands.supermodreborn.money.check.success.not_enough": "%s has %s money (requires %s). They do not have enough."
+  "commands.supermodreborn.money.check.success.not_enough": "%s has %s money (requires %s). They do not have enough.",
+  "container.supermodreborn.minezon": "Minezon"
 }

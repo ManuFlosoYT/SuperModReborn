@@ -1,5 +1,7 @@
 package net.manufloso;
 
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.manufloso.block.ModBlocks;
 import net.manufloso.block.entity.ModBlockEntities;
 import net.manufloso.block.entity.renderer.PedestalBlockEntityRenderer;
