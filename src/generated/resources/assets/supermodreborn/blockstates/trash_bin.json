@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "supermodreborn:block/trash_bin",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "supermodreborn:block/trash_bin"
+    },
+    "facing=south": {
+      "model": "supermodreborn:block/trash_bin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "supermodreborn:block/trash_bin",
+      "y": 270
+    }
+  }
+}

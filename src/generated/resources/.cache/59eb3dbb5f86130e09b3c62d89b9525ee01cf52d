@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-01T11:13:08.706781711	Loot Tables
+// 1.21.1	2026-04-22T10:09:43.391865192	Loot Tables
 11b24a4f5bc952e1c645633f2422d100688d52f9 data/supermodreborn/loot_table/blocks/burnt_nether_bricks.json
 0ed145232540bf3a3d255be6b56cb0caacef6b83 data/supermodreborn/loot_table/blocks/chiseled_endstone_bricks.json
 9bc2b6953d5bd3156332e325d088a675bc606229 data/supermodreborn/loot_table/blocks/chunk_loader.json
@@ -113,3 +113,4 @@ d699bb6081d994838b51bfc18e3caa82546346c6 data/supermodreborn/loot_table/blocks/p
 2726b673a26df6926fbb17d422756136d31f49a8 data/supermodreborn/loot_table/blocks/stripped_palm_log.json
 03f872561096c57687d909606fcdd99fc5ec4b9c data/supermodreborn/loot_table/blocks/stripped_palm_wood.json
 436370419a971c586cee6d91c4e7cc7e48723011 data/supermodreborn/loot_table/blocks/tomato_crop.json
+8c74c83eb1cc86158e93e05e858c00124ed931ae data/supermodreborn/loot_table/blocks/trash_bin.json

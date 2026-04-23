@@ -3,6 +3,7 @@ package net.manufloso.screen;
 import net.manufloso.screen.custom.BackpackMenu;
 import net.manufloso.screen.custom.LargeBackpackMenu;
 import net.manufloso.screen.custom.PedestalMenu;
+import net.manufloso.screen.custom.TrashBinMenu;
 import net.manufloso.supermodreborn;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -25,6 +26,9 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<LargeBackpackMenu>> LARGE_BACKPACK_MENU =
             registerMenuType("large_backpack_menu", LargeBackpackMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<TrashBinMenu>> TRASH_BIN_MENU =
+            registerMenuType("trash_bin_menu", TrashBinMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {
